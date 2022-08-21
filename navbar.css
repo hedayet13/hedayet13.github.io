@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: bahasus93;
+    src: url(Font/Bauhaus93Regular.ttf);
+}
 .navDiv {
     width:100vw;
     /* height: 40%; */
@@ -18,7 +21,7 @@
     /* text-align: center; */
     /* padding-top: 1%; */
     padding-left: 0.5vw;
-    font-family: "Bauhaus 93";
+    font-family: bahasus93;
     font-size: 300%;
 }
 
