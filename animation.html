@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <link rel="stylesheet" href="animation2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+</head>
+
+<body>
+    <!-- <div>
+        <div class="center">
+            <h1>HI</h1>
+        </div>
+    </div> -->
+
+    <div class="intro">
+        <h1 class="logo-header"><span class="logo">LO</span><span class="logo">go</span></h1>
+    </div>
+    <header>
+        <h4>
+            Logo.
+        </h4>
+    </header>
+    <script>
+        let intro = document.querySelector('.intro');
+        let logo = document.querySelector('.logo-header');
+        let logoSpan = document.querySelector('.logo');
+
+        window.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                logoSpan.forEach((span, idx) => {
+                    setTimeout(() => {
+                        span.classList.add('active');
+                    }, (idx + 1) * 400)
+                });
+                setTimeout(() => {
+                    logoSpan.forEach((span, idx) => {
+                        setTimeout(() => {
+                            span.classList.remove('active');
+                            span.classList.add('fade');
+                        }, (idx + 1) * 50)
+                    })
+                }, 2000);
+                setTimeout(() => {
+                    intro.style.top = '-100vh';
+                }, 2300)
+            })
+        })
+    </script>
+</body>
+
+</html>
