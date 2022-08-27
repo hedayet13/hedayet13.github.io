@@ -1,0 +1,41 @@
+.blogHeading{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60% ;
+    background-color: rgb(228, 238, 238);
+    
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    padding: 50px;
+}
+.blogHeading h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blogHeading h6{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blogHeading p{
+    font-size: 1.2rem;
+    font-family: monospace
+}
+
+.coolBlog{
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    width: 80% ;
+    background-color: rgb(228, 238, 238);
+    
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.coolBlog div{
+    margin: 10px;
+}

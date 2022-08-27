@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/blog/blog.css"> -->
+
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: bahasus;
+            src: url(css/main/Font/Bauhaus93Regular.ttf);
+        }
+        .coolBlog {
+            font-size: large;
+            font-family: 'Gill Sans', sans-serif;
+            font-weight: bold;
+            margin: auto;
+            /* display: flex; */
+            margin-bottom: 20px;
+            width: 80%;
+            background-color: rgb(228, 238, 238);
+            border-radius: 10px;
+            /* border: 1px solid black; */
+            padding: 20px 20px 40px 20px;
+        }
+
+        .hi{
+            font-family: bahasus;
+            font-size: 400%;
+            color: rgb(21, 40, 95);
+        }
+        .hi:hover{
+            color: rgb(77, 62, 117);
+        }
+
+    </style>
+    <div style="text-align: center;">
+        <a href="index.html" style="text-decoration: none;"><h1 class="hi">HI</h1></a>
+    </div>
+    <div id="blog-list">
+        <!-- <h1></h1> -->
+    </div>
+
+    <!-- <div class="coolBlog">
+        <div style="float: left;">hekki</div>
+        <div style="float: right;">no</div>
+    </div> -->
+</body>
+<script>
+    $(document).ready(function () {
+        $.getJSON("blog.json", function (data) {
+            var blogData = "";
+            $.each(data, function (i, item) {
+                // blogData += "<h1>"+item.title+"</h1>";
+
+                blogData += '<div class="coolBlog">';
+                blogData += '<div style="float: left;">' + item.title + '</div>';
+                blogData += '<div style="float: right;">' + item.date + '</div>';
+                // blogData += "<p>"+item.description+"</p>";
+                blogData += "</div>";
+            }
+            );
+            $("#blog-list").append(blogData);
+        })
+    })
+</script>
+
+</html>

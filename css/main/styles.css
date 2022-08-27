@@ -4,6 +4,10 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+@font-face {
+  font-family: Google Sans;
+  src: url(Font/ProductSans-Light.ttf);
+}
 :root{
   --primary-color: #008080;
   --background-color:white;
@@ -217,6 +221,7 @@ a{
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-size: 1.2vw;
     word-spacing: 3px;
+    font-family: Google Sans;
   }
   .projectHeading{
     font-family: calibre;
