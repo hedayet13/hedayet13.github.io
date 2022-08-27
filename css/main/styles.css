@@ -246,7 +246,7 @@ a{
   
   .project{
     background-color: var(--background-color);
-    height: 25vw;
+    height: 30vw;
     width: 100%;
     margin: auto;
     display: flex;
@@ -254,8 +254,8 @@ a{
     align-items: center;
   }
   .projectImage{
-    height: 20vw;
-    width: 35vw;
+    height: 26vw;
+    width: 38vw;
     background-color: var(--primary-color);
     border-radius: 5px;  
   }
