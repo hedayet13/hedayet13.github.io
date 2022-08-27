@@ -52,7 +52,12 @@
             blogData += "<div class='blogHeading'>";
             blogData += "<h1>"+item.title+"</h1>";
             blogData += "<h6>"+item.date+"</h6>";
-            blogData += "<p>"+item.description+"</p>";
+            // console.log(item.details.length)
+            for (let j=0; j<item.details.length;j++) {
+                blogData += "<p>"+item.details[j]+"</p>";
+            }
+            // console.log(Object.keys(item.details)[0]);
+            
             blogData += "</div>";}
         });
         $("#blog-list").append(blogData);

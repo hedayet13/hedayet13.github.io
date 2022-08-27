@@ -1,6 +1,6 @@
 [
     {
-        "id" : "8",
+        "id": "8",
         "date": "2015-01-01",
         "title": "Getting started with linux",
         "tech": [
@@ -9,11 +9,11 @@
             "Kali"
         ],
         "description": "Monitoring of ICU data using R and Python",
-        "details":"",
+        "details": ["Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system.[22] Because of the dominance of the Linux-based Android on smartphones, Linux, including Android, has the largest installed base of all general-purpose operating systems, as of May 2022.[23][24][25] Although Linux is, as of May 2022, used by only around 2.3 percent of desktop computers,[26] the Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[27] Linux is the leading operating system on servers (over 96.4% of the top 1 million web servers' operating systems are Linux),[28] leads other big iron systems such as mainframe computers, and is the only OS used on TOP500 supercomputers (since November 2017, having gradually eliminated all competitors)."],
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "7",
+        "id": "7",
         "date": "2015-01-01",
         "title": "What is hping3?",
         "tech": [
@@ -22,22 +22,22 @@
             "sql"
         ],
         "description": "Monitoring of ICU data using R and Python",
+        "details":["sdfsad"],
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "6",
+        "id": "6",
         "date": "2015-01-01",
         "title": "UFW - Uncomplied Firewall",
         "tech": [
             "Firewall",
             "Nginx"
-            
         ],
         "description": "Monitoring of ICU data using R and Python",
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "5",
+        "id": "5",
         "date": "2015-01-01",
         "title": "How to use git",
         "tech": [
@@ -49,7 +49,7 @@
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "4",
+        "id": "4",
         "date": "2015-01-01",
         "title": "Getting started with linux",
         "tech": [
@@ -58,11 +58,11 @@
             "Kali"
         ],
         "description": "Monitoring of ICU data using R and Python",
-        "details":"",
+        "details": "",
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "3",
+        "id": "3",
         "date": "2015-01-01",
         "title": "What is hping3?",
         "tech": [
@@ -74,19 +74,18 @@
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "2",
+        "id": "2",
         "date": "2015-01-01",
         "title": "UFW - Uncomplied Firewall",
         "tech": [
             "Firewall",
             "Nginx"
-            
         ],
         "description": "Monitoring of ICU data using R and Python",
         "url": "https://www.stellarbd.com/icu"
     },
     {
-        "id" : "1",
+        "id": "1",
         "date": "2015-01-01",
         "title": "How to use git",
         "tech": [
@@ -97,5 +96,4 @@
         "description": "Monitoring of ICU data using R and Python",
         "url": "https://www.stellarbd.com/icu"
     }
-    
 ]
