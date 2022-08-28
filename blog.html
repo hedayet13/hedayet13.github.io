@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/blog/blog.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
         }
     </style>
     <div style="text-align: center;">
-        <a href="index.html" style="text-decoration: none;"><h1 class="hi">HI</h1></a>
+        <a href="index.html#blog" style="text-decoration: none;"><h1 class="hi" data-aos="fade-down">HI</h1></a>
     </div>
     <div id="blog-list">
         <!-- <h1></h1> -->
@@ -38,6 +39,13 @@
         <div style="float: left;">hekki</div>
         <div style="float: right;">no</div>
     </div> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        }
+        );
+    </script>
 </body>
 <script>
     $(document).ready(function(){
@@ -49,7 +57,7 @@
         $.each(data,function(i,item){
             // blogData += "<h1>"+item.title+"</h1>";
             if(item.id==params){
-            blogData += "<div class='blogHeading'>";
+            blogData += "<div class='blogHeading' data-aos='fade-up' data-aos-duration=1500>";
             blogData += "<h1>"+item.title+"</h1>";
             blogData += "<h6>"+item.date+"</h6>";
             // console.log(item.details.length)

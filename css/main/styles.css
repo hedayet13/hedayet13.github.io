@@ -381,7 +381,6 @@ a{
     font-size: 1vw;
     margin-left: 1vw;
   }
-
   .grid-item img:hover{
     animation: gridImage 1s 1;
     opacity: 1;
@@ -612,11 +611,13 @@ a{
     /* margin-bottom: 2vw; */
   }
   .blog-heading{
-    font-size: 6vw;
-    font-weight: 300;
+    font-size: 3.5vw;
+    font-family: Calibri;
+    font-weight: 1300;
   }
   .blog-description{
-    font-size: 3vw;
+    font-size: 2.5vw;
+    padding-bottom: 30px;
   }
   .bottom-part{
     padding: 2vw 6vw;

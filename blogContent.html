@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Blog</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- <link rel="stylesheet" href="css/blog/blog.css"> -->
 
 </head>
@@ -17,6 +19,7 @@
             font-family: bahasus;
             src: url(css/main/Font/Bauhaus93Regular.ttf);
         }
+
         .coolBlog {
             font-size: large;
             font-family: 'Gill Sans', sans-serif;
@@ -31,20 +34,22 @@
             padding: 20px 20px 40px 20px;
         }
 
-        .hi{
+        .hi {
             font-family: bahasus;
             font-size: 400%;
             color: rgb(21, 40, 95);
         }
-        .hi:hover{
+
+        .hi:hover {
             color: rgb(77, 62, 117);
         }
-
     </style>
     <div style="text-align: center;">
-        <a href="index.html" style="text-decoration: none;"><h1 class="hi">HI</h1></a>
+        <a href="index.html" style="text-decoration: none;">
+            <h1 class="hi" data-aos="fade-down">HI</h1>
+        </a>
     </div>
-    <div id="blog-list">
+    <div id="blog-list" data-aos="fade-up" data-aos-duration="1000">
         <!-- <h1></h1> -->
     </div>
 
@@ -52,7 +57,15 @@
         <div style="float: left;">hekki</div>
         <div style="float: right;">no</div>
     </div> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        }
+        );
+    </script>
 </body>
+
 <script>
     $(document).ready(function () {
         $.getJSON("blog.json", function (data) {

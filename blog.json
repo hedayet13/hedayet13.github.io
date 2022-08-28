@@ -34,6 +34,7 @@
             "Nginx"
         ],
         "description": "Monitoring of ICU data using R and Python",
+        "details":[],
         "url": "https://www.stellarbd.com/icu"
     },
     {
@@ -46,6 +47,7 @@
             "sql"
         ],
         "description": "Monitoring of ICU data using R and Python",
+        "details":[],
         "url": "https://www.stellarbd.com/icu"
     },
     {
