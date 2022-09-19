@@ -23,7 +23,10 @@
     font-size: 1.2rem;
     font-family: monospace
 }
-
+.blogImage{
+    display: flex;
+    justify-content: center;
+}
 .coolBlog{
     margin: auto;
     display: flex;

@@ -34,8 +34,9 @@
         <h1>Getting started with linux</h1>
         <h6>Data 2015-15</h6>
         <p>Linux is a tool by which you can do anything. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam in cum aut adipisci <br> mollitia ut qui et ducimus dolor perspiciatis  nesciunt, quidem ipsum tenetur minus nobis esse? Sed, ratione ipsum.</p>
-    </div> -->
-    <!-- <div class="coolBlog">
+        <div class="blogImage"><img src="/images/blog/linux.png" alt="" width="50%"></div>
+    </div>
+    <div class="coolBlog">
         <div style="float: left;">hekki</div>
         <div style="float: right;">no</div>
     </div> -->
@@ -62,7 +63,12 @@
             blogData += "<h6>"+item.date+"</h6>";
             // console.log(item.details.length)
             for (let j=0; j<item.details.length;j++) {
-                blogData += "<p>"+item.details[j]+"</p>";
+                if(item.details[j][0]=="image"){
+                    // console.log(item.details[j][0])
+                    blogData+= "<div class='blogImage'><img src='images/"+item.details[j][1]+"' width='"+item.details[j][2]+"'>";
+                }
+                else{
+                blogData += "<p>"+item.details[j]+"</p>";}
             }
             // console.log(Object.keys(item.details)[0]);
             
