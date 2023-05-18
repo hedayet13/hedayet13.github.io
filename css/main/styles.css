@@ -3,7 +3,7 @@
   src: url(C:\Its mine\Workspace\Flask\My web\myenv\templates\fonts\calibre\CalibreBold.otf);
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
   font-family: Google Sans;
   src: url(Font/ProductSans-Light.ttf);
@@ -108,7 +108,7 @@ a{
   .helloDiv{
     /* background-color: #E6EAFF; */
     height: 50%;
-    width: 60%;
+    width: 65%;
     /* margin-right: % */
     /* vertical-align: middle; */
   }
@@ -186,17 +186,17 @@ a{
 
 
   .myName{
-    font-family: calibre;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   .myNameSub{
-    font-family: calibre;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   .mynameSub span:before{
-    font-family: calibre;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     content: '';
     animation: animate infinite 8s ease-in;
@@ -237,7 +237,7 @@ a{
     /* background-color: #000980; */
   }
   .heading{
-    font-family: calibre;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--primary-color);
     font-size: 2.5vw;
     font-weight: 650;
@@ -304,7 +304,7 @@ a{
     border-radius: 10px;
     background-color: #18575c;
     color: rgba(255, 255, 255, 0.842);
-    font-family: 'Montserrat';
+    font-family: monospace;
     font-size: 1vw;
     font-weight: semi-bold;
   }
@@ -372,7 +372,7 @@ a{
     transform: translate(-50%, 10%);
   }
   .centered h3{
-    font-family: calibre;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
   }
   .centered h6 span{
@@ -436,7 +436,7 @@ a{
   
 }
 .blog-heading{
-  font-family: calibre;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: whitesmoke;
   font-size: 1.5vw;
   font-weight: 650;
@@ -462,7 +462,7 @@ a{
 }
 .blog-description{
   font-size:1vw;
-  font-family:'Montserrat';
+  font-family: sans-serif;
 }
 
 .bottom-part{
