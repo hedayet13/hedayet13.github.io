@@ -359,7 +359,7 @@ a{
   .grid-item img{
     border-radius: .5vw;
     filter: grayscale(100%);
-    opacity: 0.5;
+    opacity: 0.4;
   }
   
   .centered {
