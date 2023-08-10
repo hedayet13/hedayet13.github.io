@@ -249,11 +249,11 @@ a{
     color: var(--secondary-color);
     font-size: 1.5vw;
     font-weight: 650;
-    opacity: 0.7;
+    opacity: 1;
   }
   .headingPresentation a{
     text-decoration: none;
-    color: var(--secondary-color);
+    color: #18575c;
   }
   .headingPresentation a li{
     margin-bottom: 10px;
@@ -321,7 +321,8 @@ a{
     padding: 20px 20px 20px 20px;
     /* border: 3px solid; */
     border-radius: 10px;
-    background-color: #18575c;
+    /* background-color: #18575c; */
+    background-color: var(--secondary-color);
     color: rgba(255, 255, 255, 0.842);
     font-family: monospace;
     font-size: 1vw;
