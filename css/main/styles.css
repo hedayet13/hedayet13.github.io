@@ -139,42 +139,7 @@ a{
     width: 90%;
   }
   
-  .myImage{
-    /* height: 40%; */
-    width: 20%;
-    background-color:var(--primary-color);
-    border: 0px solid transparent;
-    border-radius: 20%;
-    position: relative;
-  }
-  .myImage img{
-    /* height: 100%; */
-    width: 100%;
-    /* border: 3px solid #E6EAFF; */
-    border-radius: 20%;
-    box-shadow: 0px 0px 10px var(--primary-color);
-    opacity: 0.7;
-    filter: grayscale(100%);
-    filter:brightness(120%);
-  }
-  .myImage img:hover{
-    animation: myImage 1s 1;
-    opacity: 1;
-    filter: brightness(100%);
-  }
-  @keyframes myImage {
-    0% {
-      opacity: 0.8;
-      box-shadow: 0px 0px 0px #000980;
-    }50%{
-      opacity: 1;
-      box-shadow: 0px 0px 20px #4e0a34;
-    }
-    100%{ 
-      box-shadow: 0px 0px 10px var(--primary-color);
-      filter: brightness(100%);
-    }
-  }
+
 
   .firaMono{
     font-family: Fira Mono;
