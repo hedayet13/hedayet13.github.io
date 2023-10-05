@@ -86,3 +86,13 @@
         left: 30%;
     }
   }
+
+.detailsFont{
+  font-size: medium;
+}
+.aim{
+  font-weight: bold;
+}
+li{
+  margin-bottom: 1%;
+}
