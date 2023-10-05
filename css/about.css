@@ -76,23 +76,53 @@
   .aboutdiv{
     margin-top: 5%;
   }
-  @media (max-width: 1000px) {
-    .abouthedayet {
-      margin-left: 6rem;
-      margin-right: 6rem;
-    }
-    .myImage{
-        width: 40%;
-        left: 30%;
-    }
-  }
-
+  
+.aboutDivHead{
+  font-family: Montserrat; color: #008080;font-size: 150%; font-weight: 650;
+}
+.aboutdivFont{
+  font-family: Montserrat;
+  /* font-size: 100%; */
+}
+.journalDetails{
+  font-weight: bolder;font-style: italic;font-size: medium;
+}
 .detailsFont{
   font-size: medium;
 }
 .aim{
   font-weight: bold;
+  
 }
 li{
   margin-bottom: 1%;
+}
+
+@media (max-width: 1000px) {
+  .abouthedayet {
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+  }
+  .myImage{
+      width: 40%;
+      left: 30%;
+  }
+  .aboutDivHead{
+    font-size: 250%;
+  }
+  .aboutdivFont{
+    font-size: 2.2rem;
+    text-align: justify;
+  }
+  .detailsFont{
+    font-size: 1.7rem;
+  }
+  .aim{
+    font-size: 1.7rem;
+  }
+  .journalDetails{
+    font-size: 1.7rem;
+  }
+
 }
