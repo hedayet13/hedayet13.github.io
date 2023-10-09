@@ -83,6 +83,7 @@
 }
 .aboutdivFont{
   font-family: Montserrat;
+  text-align: justify;
   /* font-size: 100%; */
 }
 .journalDetails{
