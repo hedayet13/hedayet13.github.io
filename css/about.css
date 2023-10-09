@@ -76,7 +76,19 @@
 
   .aboutdiv{
     margin-top: 5%;
+    
   }
+.contact{
+  font-size: 5vh;
+  text-decoration: none;
+}
+.contact.a{
+  padding-right: 10px;
+}
+/* .logo{
+  text-decoration: none;
+} */
+
   
 .aboutDivHead{
   font-family: Montserrat; color: #008080;font-size: 150%; font-weight: 650;
