@@ -129,10 +129,12 @@ th {
 
 
 @media (max-width: 1000px) {
+  th,td{
+    font-size:x-large;
+  }
   .abouthedayet {
     margin-left: 3rem;
     margin-right: 3rem;
-
   }
   .myImage{
       width: 40%;
