@@ -478,11 +478,18 @@ a{
 .mobileRunningProject{
   position: fixed;
 }
-
+.mobileContact{
+  left: -10%;
+  position: fixed;
+}
 
 @media only screen and (max-width:800px){
   .mobileRunningProject{
     position: relative;
+  }
+  .mobileContact{
+    position: relative;
+    left: 0%;
   }
   .firaMono{
     color: white;
