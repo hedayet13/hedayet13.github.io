@@ -2,6 +2,7 @@
   font-family: calibre;
   src: url(C:\Its mine\Workspace\Flask\My web\myenv\templates\fonts\calibre\CalibreBold.otf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
@@ -24,6 +25,9 @@ html,body,section{
   
   /* margin: 0%; */
   /* margin: 0%; */
+}
+h1, h2, h3, h4, h5,h6{
+  margin: 0%;
 }
 a{
   text-decoration: none;

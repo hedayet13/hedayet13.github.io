@@ -1,115 +1,136 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
   font-family: Google Sans;
   src: url(Font/ProductSans-Light.ttf);
 }
+
 @font-face {
-    font-family: bahasus93;
-    src: url(Font/Bauhaus93Regular.ttf);
+  font-family: bahasus93;
+  src: url(Font/Bauhaus93Regular.ttf);
 }
-:root{
+
+:root {
   --primary-color: #008080;
   --secondary-color: #18575c;
-  --background-color:white;
+  --background-color: white;
   /* --background-color:#E6EAFF; */
 }
 
-.hi{
-    font-family: bahasus93;
-    font-size: 10ch;
-    /* font-weight: bold; */
+.hi {
+  font-family: bahasus93;
+  font-size: 10ch;
+  /* font-weight: bold; */
 }
 
-.abouthedayet{
-    margin-top: 2%;
-    margin-left: 18rem;
-    margin-right: 18rem;
-    margin-bottom: 5%;
+.abouthedayet {
+  margin-top: 2%;
+  margin-left: 18rem;
+  margin-right: 18rem;
+  margin-bottom: 5%;
 }
 
 .navbar-nav a {
-    margin-right: 1rem;
-    font-size: 1.2rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.myImage {
+  /* height: 40%; */
+  /* margin-top: %; */
+  margin-bottom: 5%;
+  width: 25%;
+  background-color: var(--primary-color);
+  border: 0px solid transparent;
+  border-radius: 20%;
+  position: relative;
+  left: 37.5%;
+}
+
+.myImage img {
+  /* height: 100%; */
+  width: 100%;
+  /* border: 3px solid #E6EAFF; */
+  border-radius: 20%;
+  box-shadow: 0px 0px 10px var(--primary-color);
+  opacity: 0.7;
+  filter: grayscale(100%);
+  filter: brightness(120%);
+}
+
+.myImage img:hover {
+  animation: myImage 1s 1;
+  opacity: 1;
+  filter: brightness(100%);
+}
+
+@keyframes myImage {
+  0% {
+    opacity: 0.8;
+    box-shadow: 0px 0px 0px #000980;
   }
 
-.myImage{
-    /* height: 40%; */
-    /* margin-top: %; */
-    margin-bottom: 5%;
-    width: 25%;
-    background-color:var(--primary-color);
-    border: 0px solid transparent;
-    border-radius: 20%;
-    position: relative;
-    left: 37.5%;
-  }
-  .myImage img{
-    /* height: 100%; */
-    width: 100%;
-    /* border: 3px solid #E6EAFF; */
-    border-radius: 20%;
-    box-shadow: 0px 0px 10px var(--primary-color);
-    opacity: 0.7;
-    filter: grayscale(100%);
-    filter:brightness(120%);
-  }
-  .myImage img:hover{
-    animation: myImage 1s 1;
+  50% {
     opacity: 1;
+    box-shadow: 0px 0px 20px #4e0a34;
+  }
+
+  100% {
+    box-shadow: 0px 0px 10px var(--primary-color);
     filter: brightness(100%);
   }
-  @keyframes myImage {
-    0% {
-      opacity: 0.8;
-      box-shadow: 0px 0px 0px #000980;
-    }50%{
-      opacity: 1;
-      box-shadow: 0px 0px 20px #4e0a34;
-    }
-    100%{ 
-      box-shadow: 0px 0px 10px var(--primary-color);
-      filter: brightness(100%);
-    }
-  }
+}
 
-  .aboutdiv{
-    margin-top: 5%;
-    
-  }
-.contact{
+.aboutdiv {
+  margin-top: 5%;
+
+}
+
+.contact {
   font-size: 5vh;
   text-decoration: none;
 }
-.contact.a{
+
+.contact.a {
   padding-right: 10px;
 }
+
 /* .logo{
   text-decoration: none;
 } */
 
-  
-.aboutDivHead{
-  font-family: Montserrat; color: #008080;font-size: 150%; font-weight: 650;
+
+.aboutDivHead {
+  font-family: Montserrat;
+  color: #008080;
+  font-size: 150%;
+  font-weight: 650;
 }
-.aboutdivFont{
+
+.aboutdivFont {
   font-family: Montserrat;
   text-align: justify;
   font-size: large;
   /* font-size: 100%; */
 }
-.journalDetails{
-  font-weight: bolder;font-style: italic;font-size: medium;
-}
-.detailsFont{
+
+.journalDetails {
+  font-weight: bolder;
+  font-style: italic;
   font-size: medium;
 }
-.aim{
-  font-weight: bold;
-  
+
+.detailsFont {
+  font-size: medium;
 }
-li{
+
+.aim {
+  font-weight: bold;
+
+}
+
+li {
   margin-bottom: 1%;
 }
 
@@ -118,7 +139,8 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
@@ -131,31 +153,40 @@ th {
 
 
 @media (max-width: 1000px) {
-  th,td{
-    font-size:x-large;
+
+  th,
+  td {
+    font-size: x-large;
   }
+
   .abouthedayet {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-  .myImage{
-      width: 40%;
-      left: 30%;
+
+  .myImage {
+    width: 40%;
+    left: 30%;
   }
-  .aboutDivHead{
+
+  .aboutDivHead {
     font-size: 250%;
   }
-  .aboutdivFont{
+
+  .aboutdivFont {
     font-size: 2.2rem;
     text-align: justify;
   }
-  .detailsFont{
+
+  .detailsFont {
     font-size: 1.7rem;
   }
-  .aim{
+
+  .aim {
     font-size: 1.7rem;
   }
-  .journalDetails{
+
+  .journalDetails {
     font-size: 1.7rem;
   }
 
