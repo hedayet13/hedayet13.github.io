@@ -153,6 +153,9 @@ th {
 
 
 @media (max-width: 1000px) {
+  li {
+    margin-bottom: 1%;
+  }
 
   th,
   td {
@@ -174,7 +177,7 @@ th {
   }
 
   .aboutdivFont {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: justify;
   }
 
