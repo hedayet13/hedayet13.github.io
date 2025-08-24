@@ -120,9 +120,15 @@
   font-style: italic;
   font-size: medium;
 }
+.projectheading{
+  font-weight: bold;
+  text-decoration: underline;
+  /* margin-bottom: 0%; */
+}
 
 .detailsFont {
   font-size: medium;
+
 }
 
 .aim {
@@ -177,20 +183,21 @@ th {
   }
 
   .aboutdivFont {
-    font-size: 2rem;
+    font-size: 220%;
     text-align: justify;
   }
 
   .detailsFont {
-    font-size: 1.7rem;
+    font-size: 100%;
   }
-
+  .projectheading{
+    font-size: 100%;
+  }
   .aim {
-    font-size: 1.7rem;
+    font-size: 90%;
   }
 
   .journalDetails {
-    font-size: 1.7rem;
+    font-size: 90%;
   }
-
 }
