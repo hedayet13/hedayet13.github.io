@@ -1,447 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/main/navbar.css">
-  <link rel="stylesheet" href="css/main/styles.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  <!-- <link rel="stylesheet" href="css/main/animation.css"> -->
-  <!-- <link rel="stylesheet" href="css/blog/blog.css"> -->
-  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href=
-"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet"> -->
-
-  <link rel="icon" href="images/logo.png">
-  <title>About Hedayet</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>About – Hedayetul Islam</title>
+<link rel="icon" href="images/logo.png" />
+<link rel="stylesheet" href="css/about.css">
 </head>
-
 <body>
-  <div class="d-flex align-items-center justify-content-center">
-    <div class="my-div hi">
-      <a style="color:#18575c;" href="index.html">HI</a>
-    </div>
-  </div>
-  <div class="d-flex align-items-center justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" style="font-family: bahasus93;" href="#publication">Publications</a>
-        <a class="nav-item nav-link" style="font-family: bahasus93;" href="#research">Research</a>
-        <a class="nav-item nav-link" style="font-family: bahasus93;" href="#award">Award</a>
-        <a class="nav-item nav-link" style="font-family: bahasus93;" href="#skill">Skill</a>
-        <a class="nav-item nav-link" style="font-family: bahasus93;" href="#contact">Contact</a>
-      </div>
+
+<!-- =========================
+     NAVBAR (always visible)
+========================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">HI</span>
+      <span>Hedayetul Islam</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#publication">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#award">Awards</a>
+      <a href="#courses">Courses</a>
+      <a href="#skill">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="drawer">Menu</button>
+  </div>
+  <nav id="drawer" class="drawer" hidden>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#publication">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#award">Awards</a>
+    <a href="#courses">Courses</a>
+    <a href="#skill">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- =========================
+     HERO / ABOUT
+========================= -->
+<section class="hero" id="about">
+  <div class="grid">
+    <!-- Portrait / quick facts -->
+    <aside class="card portrait span-6 span-4-lg">
+      <div class="thumb"><img src="images/hedayet.jpg" alt="Hedayetul Islam portrait" /></div>
+      <div class="card-body">
+        <p class="muted">Electrical Engineering and Researcher</p>
+      </div>
+    </aside>
+
+    <!-- Bio -->
+    <article class="card span-6 span-8-lg">
+      <div class="card-body">
+        <h3 class="visually-hidden">About Me</h3>
+        <p>
+          My name is Md Hedayetul Islam Chy, a third semester graduate student in the Department of
+          Electrical and Electronic Engineering at the University of Chittagong. I’m currently advised by
+          <a href="https://scholar.google.com/citations?user=3zYxFckAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Mohammed Arif Iftakher Mahmood</a>.
+          Recently I’ve been exploring <strong>natural surfaces</strong> to design <strong>anti-splashing</strong> structures that mimic biology.
+          My broader interests include <strong>Computer Vision</strong>, <strong>Medical Image Analysis</strong>, <strong>Wearable Electronics</strong>,
+          <strong>Machine Learning</strong>, and <strong>Bio-Engineering</strong>.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Medical Image Analysis</span>
+          <span class="tag">Wearables</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Bio-Engineering</span>
+        </div>
+
+        <div class="cta-row" style="margin-top:6px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="#publication">View publications</a>
+          <a class="btn" href="#projects">See projects</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================
+     EDUCATION
+========================= -->
+<section id="education">
+  <div class="container">
+    <div class="section-head"><h2>Education</h2></div>
+    <div class="grid">
+      <article class="card span-6"><div class="card-body">
+        <h3>M.S. in Electrical & Electronic Engineering</h3>
+        <p class="muted">University of Chittagong · Jun 2022 – Feb 2024</p>
+      </div></article>
+
+      <article class="card span-6"><div class="card-body">
+        <h3>B.Sc. in Electrical & Electronic Engineering</h3>
+        <p class="muted">University of Chittagong · Jan 2017 – Feb 2022</p>
+      </div></article>
+
+      <article class="card span-6"><div class="card-body">
+        <h3>Higher Secondary School</h3>
+        <p class="muted"><a href="https://www.htdc.edu.bd/" target="_blank" rel="noopener">Hazera Taju Degree College</a></p>
+      </div></article>
+
+      <article class="card span-6"><div class="card-body">
+        <h3>Secondary School</h3>
+        <p class="muted">
+          <a href="https://en.wikipedia.org/wiki/Chittagong_Government_High_School" target="_blank" rel="noopener">Chittagong Government High School</a> ·
+          <a href="https://gmhsctg.tsmts.com/" target="_blank" rel="noopener">Government Muslim High School</a>
+        </p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PUBLICATIONS
+========================= -->
+<section id="publication">
+  <div class="container">
+    <div class="section-head"><h2>Publications</h2></div>
+    <div class="list">
+      <article class="card span-12"><div class="card-body">
+        <h3>LLM-Enhanced Security Framework for IoT Network: Anomaly Detection and Malicious Devices Identification</h3>
+        <p class="muted">
+          Mohammed Arif Iftakher Mahmood*, Fahim Ashab, Md Saifuzzaman Sohan,
+          <span class="me">Md Hedayetul Islam Chy</span>, Md Fazlul Kader* · <em>IEEE Access</em>
+        </p>
+        <div class="tags">
+          <a class="tag" href="https://ieeexplore.ieee.org/abstract/document/11175688" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div></article>
+
+      <article class="card span-12"><div class="card-body">
+        <h3>Design optimization of anti-splashing targets and simulation of droplet impact on it</h3>
+        <p class="muted">
+          <span class="me">Md Hedayetul Islam Chy</span>, Riya Biswas, Md Fazlul Kader, Yuan Wan*, Mohammed Arif Iftakher Mahmood* ·
+          <em>Physics of Fluids (AIP)</em>
+        </p>
+        <div class="tags">
+          <a class="tag" href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PROJECTS
+========================= -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head"><h2>Projects</h2></div>
+
+    <div class="list">
+
+      <!-- Anti-Splashing Surface -->
+      <article class="card span-12">
+        <div class="thumb">
+          <img src="images/Lotus3.jpg"
+               alt="3D Anti-Splashing Surface simulation and prototypes"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <h3>Design, Fabrication & Performance Analysis of 3D Anti-Splashing Surface</h3>
+          <p><strong>Aim:</strong> We're currently crafting a cutting-edge surface as a key component of our ongoing research endeavor. This innovative surface is meticulously designed to minimize liquid splashes. Leveraging advanced fluid physics simulations, particularly with the support of Ansys Fluent, we've fine-tuned multiple parameters to perfection. Our exploration has led us to utilize top-tier materials like SLA-resin and PDMS, ensuring the utmost effectiveness and durability of the structure.</p>
+          <p class="muted"><strong>Tools:</strong> Ansys Fluent, CFD, SolidWorks 3D, OriginPro</p>
+          <div class="tags">
+            <a class="tag" href="/Documents/report/surface.pdf" target="_blank" rel="noopener">Proposal</a>
+            <a class="tag" href="/Documents/presentations/surface.pdf" target="_blank" rel="noopener">Presentation</a>
+            <a class="tag" href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" target="_blank" rel="noopener">Journal</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ICU Monitoring -->
+      <article class="card span-12">
+        <div class="thumb">
+          <img src="images/projects/icu-monitoring.jpg"
+               alt="Centralized ICU monitoring dashboard"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <h3>Centralized Monitoring System for COVID-19 ICU</h3>
+          <p>Our automated service is tailored to support hospital staff by efficiently monitoring and tracking data from ICU patients' bedside monitors, with a specific emphasis on non-COVID cases. This project serves as a valuable opportunity to gain practical experience in the evolution of a project into a fully-fledged product. While the initial stages of project development may appear straightforward, this research delves into the intricate process of transforming ideas into real-world solutions, including navigating complexities in implementation and understanding human behavior. space.tter</p>
+
+          <p class="muted"><strong>Tools:</strong> Flask, TTGO Camera Plus(Esp32-cam), Raspberry pi, OpenCV, Tesserect-OCR, Solidworks3D, Sqlite3, Flutter</p>
+          <div class="tags">
+            <a class="tag" href="https://stellarbd.com/icu" target="_blank" rel="noopener">Web</a>
+            <a class="tag" href="/Documents/report/icuMonitoring.pdf" target="_blank" rel="noopener">Thesis</a>
+            <a class="tag" href="/Documents/presentations/icuMonitoring.pdf" target="_blank" rel="noopener">Presentation</a>
+            <a class="tag" href="https://github.com/hedayet13/ICU-Monitoring-Device" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Diabetic Retinopathy -->
+      <article class="card span-12">
+        <div class="thumb">
+          <img src="images/projects/diabetic-retinopathy.jpg"
+               alt="Diabetic retinopathy retinal image heatmap"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <h3>Early Diagnosis Platform for Diabetic Retinopathy</h3>
+          <p>In this project, we utilize transfer learning techniques to accurately identify and classify hemorrhages and microaneurysms. This classification plays a crucial role in assessing the severity of the patient's condition, spanning from mild to severe cases</p>
+          <p class="muted"><strong>Tools:</strong> Python, OpenCV, Transfer Learning</p>
+          <div class="tags">
+            <a class="tag" href="https://github.com/hedayet13/opencv" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Speakers from Scratch -->
+      <article class="card span-12">
+        <div class="thumb">
+          <img src="images/projects/speakers.jpg"
+               alt="DIY speakers PCB and enclosure"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <h3>Speakers from Scratch</h3>
+          <p>I fabricated the PCB using everyday household items. For a quick overview, check out the YouTube link below. Additionally, I delved into understanding the unique traits of various transistors and their application in speaker creation. The PCB design was crafted using DipTrace software, and remarkably, it was produced without the need for specialized machinery. I also explored different types of FETs to optimize the project further.</p>
+           <p class="muted"><strong>Tools:</strong> Proteus, Pspice, Solidworks3D, SolidworksPCB</p>
+          <div class="tags">
+            <a class="tag" href="https://www.youtube.com/watch?v=FpyeXpAJetU" target="_blank" rel="noopener">YouTube</a>
+            <a class="tag" href="https://hedayet13.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DC Power Supply -->
+      <article class="card span-12">
+        <div class="thumb">
+          <img src="images/projects/dc-power-supply.jpg"
+               alt="0–30V DC bench power supply with LCD"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <h3>0–30V DC Power Supply</h3>
+          <pi>Introducing our 0-30V DC power supply, featuring a real-time voltage display on the LCD screen. We've incorporated advanced protection circuitry to safeguard the entire system from overvoltage, ensuring reliability and longevity.</p>
+          <p class="muted"><strong>Tools:</strong> Proteus, PSpice, SolidWorks 3D, SolidWorks PCB</p>
+          <div class="tags">
+            <a class="tag" href="https://www.youtube.com/watch?v=l9D94LPrgfw" target="_blank" rel="noopener">YouTube</a>
+            <a class="tag" href="Documents/presentations/DC POWER.pdf" target="_blank" rel="noopener">Presentation</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ghorvara App -->
+      <article class="card span-12">
+        <div class="thumb">
+          <img src="images/projects/ghorvara-app.jpg"
+               alt="Ghorvara Flutter mobile application UI"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="card-body">
+          <h3>Ghorvara Mobile Application</h3>
+          <p>A cross-platform Flutter application created for both Android and iOS. This program improves the ability of residents to track their spending. It also allows the house owner to simply verify the payment status of the residents with a single click. Despite the fact that this software is still in development</p>
+          <p class="muted"><strong>Tools:</strong> Flutter, Firebase</p>
+          <div class="tags">
+            <a class="tag" href="https://github.com/hedayet13/ghorvara" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================
+     AWARDS & TRAINING
+========================= -->
+<section id="award">
+  <div class="container">
+    <div class="section-head"><h2>Awards & Training</h2></div>
+
+    <div class="list">
+
+      <!-- Award 1 -->
+      <article class="card award-card">
+        <div class="card-body">
+          <h3>ICT Fellowship — Ministry of ICT, Bangladesh</h3>
+          <p class="muted">Duration: 2023–2024</p>
+        </div>
+
+        <!-- Right-side image -->
+        <a class="award-thumb" href="images/awards/ict.jpg" target="_blank" rel="noopener">
+          <img src="images/awards/ict.jpg" alt="ICT Fellowship certificate">
+        </a>
+      </article>
+
+      <!-- Award 2 -->
+      <article class="card award-card">
+        <div class="card-body">
+          <h3>Academic Scholarship — University of Chittagong</h3>
+          <p class="muted">Duration: 2022–2023</p>
+        </div>
+        <a class="award-thumb" href="images/awards/cu.jpg" target="_blank" rel="noopener">
+          <img src="images/awards/cu.jpg" alt="Academic scholarship letter">
+        </a>
+      </article>
+
+      <!-- Award 3 (Training) -->
+      <article class="card award-card">
+        <div class="card-body">
+          <h3>Former Trainee — Ghorashal Training Center, BPDB</h3>
+          <p class="muted">2021</p>
+          <div class="tags">
+            <a class="tag" href="/images/Achievement/bpdb.pdf" target="_blank" rel="noopener">Link</a>
+          </div>
+        </div>
+        <a class="award-thumb" href="images/awards/bpdb-full.jpg" target="_blank" rel="noopener">
+          <img src="images/awards/bpdb-thumb.jpg" alt="BPDB training certificate">
+        </a>
+      </article>
+
+      <!-- Award 4 (Hackathon) -->
+      <article class="card award-card">
+        <div class="card-body">
+          <h3>Top-3 Team — National Hackathon on Frontier Technologies</h3>
+          <p class="muted">2020</p>
+          <p><strong>Idea:</strong> <em>AI and ML Recognized Stereo Camera for Occupational Health &amp; Safety</em></p>
+          <div class="tags">
+            <a class="tag" href="images/Achievement/hackathon.pdf" target="_blank" rel="noopener">Link</a>
+          </div>
+        </div>
+        <a class="award-thumb" href="images/awards/hackathon-full.jpg" target="_blank" rel="noopener">
+          <img src="images/awards/hackathon-thumb.jpg" alt="National Hackathon recognition">
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================
+     COURSES
+========================= -->
+<section id="courses">
+  <div class="container">
+    <div class="section-head"><h2>Online Courses</h2></div>
+
+    <!-- Featured track -->
+    <article class="course-card featured card">
+      <div class="course-card__left"></div>
+      <div class="course-card__body">
+        <h3 class="course-title">Deep Learning Specialization — Andrew Ng (Coursera)</h3>
+        <div class="tags">
+          <a class="tag" href="https://coursera.org/share/024853e7556bcb267bebf66a8996150a" target="_blank" rel="noopener">View track</a>
+        </div>
+        <ul class="course-list">
+          <li>Neural Networks and Deep Learning — <span class="muted">Jun 10, 2020</span> <a class="ext" href="https://coursera.org/share/13f87e04bd7edd9e41326dc820981b4f" target="_blank" rel="noopener">↗</a></li>
+          <li>Improving Deep Neural Networks — <span class="muted">Jun 16, 2020</span> <a class="ext" href="https://coursera.org/share/1e63f88bdef67f3731a2b5232dd12541" target="_blank" rel="noopener">↗</a></li>
+          <li>Structuring ML Projects — <span class="muted">Jun 24, 2020</span> <a class="ext" href="https://coursera.org/share/758998fd074afa65bc8f3764d5e9f3a9" target="_blank" rel="noopener">↗</a></li>
+          <li>Convolutional Neural Networks — <span class="muted">Jul 1, 2020</span> <a class="ext" href="https://coursera.org/share/a09f504daaaf3517fef7deec5b6bcede" target="_blank" rel="noopener">↗</a></li>
+          <li>Sequence Models — <span class="muted">Jul 23, 2020</span> <a class="ext" href="https://coursera.org/share/1ce783193f3e6bfcf72f1111bfc89643" target="_blank" rel="noopener">↗</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Grid of single courses -->
+    <div class="course-grid">
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Intro to TensorFlow for AI, ML & DL</h4>
+          <div class="course-meta">May 22, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/c195c74901bc8034f922985decaf10ac" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">AI for Medical Diagnosis</h4>
+          <div class="course-meta">Jun 3, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/4c7ba824ebf9995e6d56b1b03d2ede2d" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Image Classification with CNNs using Keras</h4>
+          <div class="course-meta">Jul 24, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/064de643aa940157aa68ed5796e3f6d7" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Object Tracking with OpenCV & Python</h4>
+          <div class="course-meta">May 28, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/1fc523da67f9bfa997a3c3d20be181d5" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Facial Expression Recognition with Keras</h4>
+          <div class="course-meta">May 28, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/dae2b87c2a0d9da6f85ef54033ebda14" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Programming for Everybody (Python)</h4>
+          <div class="course-meta">May 27, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/95a581aa3a7e824346382063f8d6bd13" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Python Data Structures</h4>
+          <div class="course-meta">Jun 3, 2020</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/70b8a1d2d5cdd3c870f46e47c76cd72a" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Getting Started with Kaggle</h4>
+          <div class="course-meta">Aug 26, 2022</div>
+          <a class="btn btn-ghost" href="https://coursera.org/share/7a8fce3e5ee7a0450ba9ae3e96ef3622" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Adobe Premiere Pro (Beginners)</h4>
+          <div class="course-meta">Jul 23, 2020</div>
+          <a class="btn btn-ghost" href="https://www.udemy.com/certificate/UC-75927d97-0ed4-4838-bab2-67d8a769b331/" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="course-card card">
+        <div class="course-card__left"></div>
+        <div class="course-card__body">
+          <h4 class="course-mini">Intro to Flutter Using Dart</h4>
+          <div class="course-meta">May 02, 2020</div>
+          <a class="btn btn-ghost" href="Documents/certificates/appBrewery.pdf" target="_blank" rel="noopener">Certificate ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+<section id="skill">
+  <div class="container">
+    <div class="section-head"><h2>Skills</h2></div>
+
+    <div class="table-wrap card">
+      <table>
+        <tr><th>Programming</th><td>Python, MATLAB, C++, JavaScript</td></tr>
+        <tr><th>Software</th><td>PSpice, Proteus, DipTrace, SolidWorks 3D, ANSYS Fluent, COMSOL, AutoCAD</td></tr>
+        <tr><th>Visualization</th><td>OpenCV, OriginPro, ParaView, Matplotlib</td></tr>
+        <tr><th>ML/DL</th><td>TensorFlow, Keras, NumPy, Pandas, Scikit-learn, RL, YOLOv5</td></tr>
+        <tr><th>Data Analysis</th><td>SciPy, Excel (Advanced), Seaborn</td></tr>
+        <tr><th>Computer Vision</th><td>OpenCV, YOLOv5, LabelImg</td></tr>
+        <tr><th>Microcontrollers</th><td>Raspberry Pi, ESP32-CAM, Arduino, TTGO Camera Plus</td></tr>
+        <tr><th>Frameworks</th><td>Flask, Django</td></tr>
+        <tr><th>OS</th><td>Ubuntu, Kali Linux, Raspbian</td></tr>
+        <tr><th>Mobile</th><td>Flutter, Firebase</td></tr>
+        <tr><th>Version Control</th><td>Git, GitHub</td></tr>
+        <tr><th>Design</th><td>Illustrator, Figma, XD, Photoshop, Premiere Pro</td></tr>
+        <tr><th>Hosting</th><td>Azure, Firebase, Google Cloud, Heroku, Vercel</td></tr>
+        <tr><th>Server & Testing</th><td>Nginx, Apache, Selenium, Postman, Docker</td></tr>
+        <tr><th>Developer Platforms</th><td>HackerRank (Gold), Kaggle, Stack Overflow</td></tr>
+        <tr><th>Other</th><td>Wireshark, REST API, MQTT</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     CONTACT / FOOTER
+========================= -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p class="muted">Find me around the web</p>
+
+  <div class="socials">
+    <a href="https://scholar.google.com/citations?user=d3VplMYAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M10.2 2L3 9.2v5.6L10.2 22v-4.7L6.4 12l3.8-5.3V2zm3.6 0v5.3L17.6 12l-3.8 5.3V22L21 14.8V9.2L13.8 2z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/hedayet13" target="_blank" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.1-1.7-1.1-1.7-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1 3 .8.1-.7.3-1 .6-1.3-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1-3-.1-.3-.5-1.4.1-3 0 0 .9-.3 3 1 .8-.2 1.7-.4 2.6-.4.9 0 1.8.1 2.6.4 2.1-1.3 3-1 3-1 .6 1.6.2 2.7.1 3 .7.8 1 1.8 1 3 0 4.2-2.6 5-5.1 5.4.3.2.6.8.6 1.6v2.3c0 .3.2.7.8.6A10.9 10.9 0 0023.5 12c0-6.4-5.1-11.5-11.5-11.5z"/>
+      </svg>
+    </a>
+    <a href="https://orcid.org/0009-0007-5734-5316" target="_blank" aria-label="ORCID">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M12 0a12 12 0 100 24A12 12 0 0012 0zm-3.2 7.4v9.3H6.8V7.4h2zm3.5 0c2.9 0 4.6 1.9 4.6 4.7s-1.7 4.7-4.6 4.7h-2.2V7.4h2.2zm-.1 1.9h-1v5.7h1c1.6 0 2.6-1.1 2.6-2.9s-1-2.8-2.6-2.8z"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100088359264911" target="_blank" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M22.5 0H1.5C.7 0 0 .7 0 1.5v21c0 .8.7 1.5 1.5 1.5h11.3v-9.2H9.7V10.5h3.1V8.1c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.4.1 2.7.1v3.2h-1.8c-1.4 0-1.7.7-1.7 1.6v2.3h3.4l-.4 3.3h-3v9.2h5.9c.8 0 1.5-.7 1.5-1.5v-21C24 .7 23.3 0 22.5 0z"/>
+      </svg>
+    </a>
+    <a href="mailto:islamhedayet67@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
   </div>
 
+  <footer style="margin-top: 12px;">
+    Designed by Hedayetul Islam · All rights reserved
+  </footer>
+</section>
 
+<!-- =========================
+     SCRIPTS
+========================= -->
 
-
-
-  <section class="abouthedayet" id="about">
-    <div style="text-align: center;">
-      <div class="myImage">
-        <img src="images/hedayet.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="">
-      <h5 class="aboutDivHead">
-        About Me
-      </h5>
-      <h5 class="aboutdivFont">My name is Md Hedayetul Islam Chy, a third semester graduate student in the department of
-        Electrical and Electronic Engineering at the University of Chittagong. Currently, I'm working under the
-        supervision of <b><a href="https://scholar.google.com/citations?user=3zYxFckAAAAJ&hl=en" target="_blank">Dr. Mohammed Arif Iftakher Mahmood</a></b>. In my recent research, I am exploring natural surfaces
-        with the goal of designing anti-splashing surfaces that mimic natural structures. <br><br> In addition to this,
-        my research interests encompass a wide range of areas, including <b>Computer Vision, Medical Image Analysis,
-        Wearable Electronics, Machine Learning, and Bio-Engineering</b>.
-
-      </h5>
-    </div>
-
-    <div class="aboutdiv">
-      <h5 class="aboutDivHead">
-        Education
-      </h5>
-      <span class="aboutdivFont" >
-        <ul>
-          <li style="margin-bottom: 0%;">M.S Engineering in Electrical and Electronic Engineering, <a href="https://cu.ac.bd/" target="_blank"> University of Chittagong. </a> (Jun 2022 - Feb 2024)
-          </li>
-          <li style="margin-bottom: 0%;">B.Sc Engineering in Electrical and Electronic Engineering, <a href="https://cu.ac.bd/" target="_blank"> University of Chittagong.</a> (Jan 2017 - Feb 2022)</li>
-          <li style="margin-bottom: 0%;">Higher Secondary School, <a href="https://www.htdc.edu.bd/" target="_blank">Hazera Taju Degree Collage</a>.</li>
-          <li style="margin-bottom: 0%;">Secondary School, <a href="https://en.wikipedia.org/wiki/Chittagong_Government_High_School" target="_blank"> Chittagong Government High School. </a></li>
-          <li style="margin-bottom: 0%;">Secondary School,<a href="https://gmhsctg.tsmts.com/" target="_blank"> Government Muslim High School. </a></li>
-        </ul>
-      </span>
-    </div>
-
-
-    <div class="aboutdiv" id="publication">
-      <h5 class="aboutDivHead">
-        Publication
-      </h5>
-      <h5 class="aboutdivFont">
-        <ol type="1">
-          <li><b>LLM-Enhanced Security Framework for IoT Network: Anomaly Detection and Malicious Devices Identification. <span><a href="https://ieeexplore.ieee.org/abstract/document/11175688" target="_blank">[Link]</a></span> </b> <br>
-            <span class="detailsFont"><a href="https://scholar.google.com/citations?user=3zYxFckAAAAJ&hl=en" target="_blank">Mohammed Arif Iftakher Mahmood*</a>, Fahim Ashab, Md Saifuzzaman Sohan,<a href="https://scholar.google.com/citations?user=d3VplMYAAAAJ&hl=en"> Md Hedayetul Islam Chy</a>, <a href="https://scholar.google.com/citations?user=HpONC9sAAAAJ&hl=en" target="_blank">Md Fazlul Kader*</a></span> <br>
-            <span class="journalDetails" style="color: blue;">IEEE Access
-            </span>
-            <!-- <span class="journalDetails" style="color: red;"> (accepted)</span> -->
-
-          </li>
-          <li><b>Design optimization of anti-splashing targets and simulation of droplet impact on it. <span><a href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" target="_blank">[Link]</a></span> </b> <br>
-            <span class="detailsFont"><a href="https://scholar.google.com/citations?user=d3VplMYAAAAJ&hl=en"> Md Hedayetul Islam Chy</a>, Riya Biswas, <a href="https://scholar.google.com/citations?user=HpONC9sAAAAJ&hl=en" target="_blank">Md Fazlul Kader</a>, <a href="https://scholar.google.com/citations?user=yLu2qQ0AAAAJ" target="_blank">Yuan Wan*</a>, <a href="https://scholar.google.com/citations?user=3zYxFckAAAAJ&hl=en" target="_blank">Mohammed Arif Iftakher Mahmood*</a></span> <br>
-            <span class="journalDetails" style="color: blue;">Physics of Fluids | Aip Publishing
-            </span>
-            <!-- <span class="journalDetails" style="color: red;"> (accepted)</span> -->
-<!-- 
-            <br><br>
-            <span class="detailsFont">
-              "Natural surfaces have micro and nano structures that affect the splashing behavior of water droplets
-              falling on them. Synthetic surfaces mimicking this natural phenomenon have been previously reported. The
-              objective of our current work is to design such surfaces and fine tune the fluid splashing behavior using
-              three-dimensional(3D) simulation tools. We have designed and simulated splashing behavior on geometrically
-              patterned micro scale surfaces using the Volume of Fluid(VoF) method. Surfaces with micro scale pillars of
-              different heights, geometrical shapes, layouts as well as tip designs were simulated with the goal of
-              minimizing fluid splash. We found that certain pillar models produce less splashes than others. We have
-              further optimized array structures for fluid splashing diameter and velocity. Behavior at different
-              falling angles and fluid types are also investigated in multi-pillar models. The results indicate that a
-              non-uniform structured surface decreases the speed and energy of the falling droplet. We have reported
-              here three finalized designed models that are 35%, 63.5% and 69% effective in reducing splash compared to
-              a flat surface model."
-            </span> -->
-
-          </li>
-
-        </ol>
-      </h5>
-      
-    </div>
-
-
-    <div class="aboutdiv" id="research">
-      <h5 class="aboutDivHead">
-        Projects
-      </h5>
-      <h5 class="aboutdivFont">
-        <ol type="1" >
-          <li>
-            <h5 class="projectheading">Design, Fabrication and Performance Analysis of 3D anti-splashing surface</h5>
-            <span class="detailsFont aim">Aim:</span> <span class="detailsFont">We're currently crafting a cutting-edge surface as a key component of our ongoing research endeavor. This innovative surface is meticulously designed to minimize liquid splashes. Leveraging advanced fluid physics simulations, particularly with the support of Ansys Fluent, we've fine-tuned multiple parameters to perfection. Our exploration has led us to utilize top-tier materials like SLA-resin and PDMS, ensuring the utmost effectiveness and durability of the structure. </span><br>
-            <span class="detailsFont aim"> Tools: </span> <span class="detailsFont"> Ansys Fluent, Computational Fluid Dynamics, Solidworks3D, OriginPro</span>
-            <br>
-            <span class="detailsFont aim"> Links:
-              <a href="/Documents/report/surface.pdf" target="_blank"> Proposal</a>,
-              <a href="/Documents/presentations/surface.pdf" target="_blank"> Presentation</a>,
-              <a href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" target="_blank"> Journal </a>
-              <!-- <a href="/Documents/report/surface.pdf" target="_blank"> Thesis Book </a> -->
-            </span>
-          </li>
-          <li>
-            <h5 class="projectheading">Centralized monitoring system for Covid-19 ICU at Chittagong General Hospital</h5>
-            <span class="detailsFont aim">Details:</span> <span class="detailsFont">Our automated service is tailored to support hospital staff by efficiently monitoring and tracking data from ICU patients' bedside monitors, with a specific emphasis on non-COVID cases. This project serves as a valuable opportunity to gain practical experience in the evolution of a project into a fully-fledged product. While the initial stages of project development may appear straightforward, this research delves into the intricate process of transforming ideas into real-world solutions, including navigating complexities in implementation and understanding human behavior.
-              space. </span><br>
-            <span class="detailsFont aim"> Tools: </span> <span class="detailsFont"> Flask, TTGO Camera Plus(Esp32-cam), Raspberry
-              pi, OpenCV, Tesserect-OCR, Solidworks3D, Sqlite3, Flutter </span>
-            <br>
-            <span class="detailsFont aim"> Links:
-              <a href="https://stellarbd.com/icu" target="_blank"> Webpage</a>,
-              <a href="/Documents/report/icuMonitoring.pdf" target="_blank"> Thesis book</a>,
-              <a href="/Documents/presentations/icuMonitoring.pdf" target="_blank"> Presentation</a>,
-              <a href="https://github.com/hedayet13/ICU-Monitoring-Device" target="_blank"> Github </a>
-            </span>
-          </li>
-          <li>
-            <h5 class="projectheading">Early diagnosis platform for Diabetic Retinopathy</h5>
-            <span class="detailsFont aim">Details:</span> <span class="detailsFont">In this project, we utilize transfer learning techniques to accurately identify and classify hemorrhages and microaneurysms. This classification plays a crucial role in assessing the severity of the patient's condition, spanning from mild to severe cases </span><br>
-            <span class="detailsFont aim"> Tools: </span> <span class="detailsFont"> Python, OpenCV, Transfer Learning
-            </span>
-            <br>
-            <span class="detailsFont aim"> Links:
-              <a href="https://github.com/hedayet13/opencv" target="_blank"> Github </a>
-            </span>
-          </li>
-          <li>
-            <h5 class="projectheading">Speakers from Scratch </h5>
-            <span class="detailsFont aim">Details:</span> <span class="detailsFont">I fabricated the PCB using everyday household items. For a quick overview, check out the YouTube link below. Additionally, I delved into understanding the unique traits of various transistors and their application in speaker creation. The PCB design was crafted using DipTrace software, and remarkably, it was produced without the need for specialized machinery. I also explored different types of FETs to optimize the project further.</span><br>
-            <span class="detailsFont aim"> Tools: </span> <span class="detailsFont"> Pspice, Diptrace, PCB Design
-            </span>
-            <br>
-            <span class="detailsFont aim"> Links:
-              <a href="https://www.youtube.com/watch?v=FpyeXpAJetU" target="_blank"> Youtube</a>,
-              <a href="https://hedayet13.wordpress.com/" target="_blank"> Blog</a>
-            </span>
-          </li>
-          <li>
-            <h5 class="projectheading">DC power supply</h5>
-            <span class="detailsFont aim">Details:</span> <span class="detailsFont">Introducing our 0-30V DC power supply, featuring a real-time voltage display on the LCD screen. We've incorporated advanced protection circuitry to safeguard the entire system from overvoltage, ensuring reliability and longevity.</span><br>
-            <span class="detailsFont aim"> Tools: </span> <span class="detailsFont"> Proteus, Pspice, Solidworks3D,
-              SolidworksPCB </span>
-            <br>
-            <span class="detailsFont aim"> Links:
-              <a href="https://www.youtube.com/watch?v=l9D94LPrgfw" target="_blank"> Youtube(CAD Model)</a>,
-              <a href="Documents/presentations/DC POWER.pdf" target="_blank"> Presentation </a>
-            </span>
-          </li>
-          <li>
-            <h5 class="projectheading">Ghorvara mobile application</h5>
-            <span class="detailsFont aim">Details:</span> <span class="detailsFont">A cross-platform Flutter application
-              created for both Android and iOS. This program improves the ability of residents to track their spending.
-              It also allows the house owner to simply verify the payment status of the residents with a single click.
-              Despite the fact that this software is still in development</span><br>
-            <span class="detailsFont aim"> Tools: </span> <span class="detailsFont"> Flutter, Firebase</span>
-            <br>
-            <span class="detailsFont aim"> Links:
-              <a href="https://github.com/hedayet13/ghorvara" target="_blank"> Github </a>
-            </span>
-          </li>
-
-
-        </ol>
-      </h5>
-    </div>
-
-
-
-    <div class="aboutdiv" id="award">
-      <h5 class="aboutDivHead">Award & Training</h5>
-      <ol class="aboutdivFont" type="1">
-        <li>
-          ICT Fellowship from the Ministry of Information and Communication Technology, Government of the People's Republic of Bangladesh. <br>
-          <span class="detailsFont aim">Duration: 2023–2024</span>
-        </li>
-        <li>
-          Academic Scholarship by the University of Chittagong, Chittagong, Bangladesh<br>
-          <span class="detailsFont aim">Duration: 2022–2023</span>
-        </li>
-        <li>
-          Former Trainee, Ghorashal Training Center, Bangladesh Power Development Board, Polash, Narsingdi<br>
-          <span class="detailsFont aim">Duration: 2021</span> <a href="/images/Achievement/bpdb.pdf" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Selected among the top three teams at the National Hackathon on Frontier Technologies<br>
-          <span class="detailsFont aim">Idea Title:</span> 
-          <span class="detailsFont" style="color: blueviolet; font-weight: bolder;">AI and ML Recognized Stereo Camera for Occupational Health and Safety</span><br>
-          <span class="detailsFont aim">Duration: 2020 </span><a href="images/Achievement/hackathon.pdf" target="_blank">[Link]</a>
-        </li>
-      </ol>
-    </div>
-
-
-    <div class="aboutdiv" id="courses">
-      <h5 class="aboutDivHead">Online Courses</h5>
-      <ul class="aboutdivFont" style="padding-left: 20px;">
-        
-        <!-- Grouped Deep Learning Specialization -->
-        <li style="margin-bottom: 12px;">
-          <strong>Deep Learning Specialization</strong> by Andrew Ng, Coursera <a href="https://coursera.org/share/024853e7556bcb267bebf66a8996150a" target="_blank">🔗</a>
-          <ul style="padding-left: 20px;">
-            <li>Neural Networks and Deep Learning – <span class="detailsFont aim">June 10, 2020</span> <a href="https://coursera.org/share/13f87e04bd7edd9e41326dc820981b4f" target="_blank" title="View Certificate">🔗</a></li>
-            <li>Improving Deep Neural Networks – <span class="detailsFont aim">June 16, 2020</span> <a href="https://coursera.org/share/1e63f88bdef67f3731a2b5232dd12541" target="_blank">🔗</a></li>
-            <li>Structuring Machine Learning Projects – <span class="detailsFont aim">June 24, 2020</span> <a href="https://coursera.org/share/758998fd074afa65bc8f3764d5e9f3a9" target="_blank">🔗</a></li>
-            <li>Convolutional Neural Networks – <span class="detailsFont aim">July 1, 2020</span> <a href="https://coursera.org/share/a09f504daaaf3517fef7deec5b6bcede" target="_blank">🔗</a></li>
-            <li>Sequence Models – <span class="detailsFont aim">July 23, 2020</span> <a href="https://coursera.org/share/1ce783193f3e6bfcf72f1111bfc89643" target="_blank">🔗</a></li>
-          </ul>
-        </li>
-    
-        <!-- Other courses -->
-        <li style="margin-bottom: 12px;">
-          Introduction to TensorFlow for AI, ML & DL by DeepLearning.AI  
-          <br><span class="detailsFont aim">May 22, 2020</span> 
-          <a href="https://coursera.org/share/c195c74901bc8034f922985decaf10ac" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          AI for Medical Diagnosis  
-          <br><span class="detailsFont aim">June 3, 2020</span> 
-          <a href="https://coursera.org/share/4c7ba824ebf9995e6d56b1b03d2ede2d" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          Image Classification with CNNs using Keras  
-          <br><span class="detailsFont aim">July 24, 2020</span> 
-          <a href="https://coursera.org/share/064de643aa940157aa68ed5796e3f6d7" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          Computer Vision - Object Tracking with OpenCV and Python  
-          <br><span class="detailsFont aim">May 28, 2020</span> 
-          <a href="https://coursera.org/share/1fc523da67f9bfa997a3c3d20be181d5" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          Facial Expression Recognition with Keras  
-          <br><span class="detailsFont aim">May 28, 2020</span> 
-          <a href="https://coursera.org/share/dae2b87c2a0d9da6f85ef54033ebda14" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          Programming for Everybody (Getting Started with Python)  
-          <br><span class="detailsFont aim">May 27, 2020</span> 
-          <a href="https://coursera.org/share/95a581aa3a7e824346382063f8d6bd13" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          Python Data Structures  
-          <br><span class="detailsFont aim">June 3, 2020</span> 
-          <a href="https://coursera.org/share/70b8a1d2d5cdd3c870f46e47c76cd72a" target="_blank">🔗</a>
-        </li>
-    
-        <li style="margin-bottom: 12px;">
-          Getting Started with Kaggle  
-          <br><span class="detailsFont aim">August 26, 2022</span> 
-          <a href="https://coursera.org/share/7a8fce3e5ee7a0450ba9ae3e96ef3622" target="_blank">🔗</a>
-        </li>
-        <li style="margin-bottom: 12px;">
-          Video Editing with Adobe Premiere Pro for Beginners  
-          <br><span class="detailsFont aim">July 23, 2020</span> 
-          <a href="https://www.udemy.com/certificate/UC-75927d97-0ed4-4838-bab2-67d8a769b331/" target="_blank">🔗</a>
-        </li>
-        <li style="margin-bottom: 12px;">
-          Introduction to Flutter Development Using Dart by London App Brewery  
-          <br><span class="detailsFont aim">May 02, 2020</span> 
-          
-          <a href="Documents/certificates/appBrewery.pdf" target="_blank">🔗</a>
-        </li>
-        
-        
-      </ul>
-    </div>
-    
-    
-    
-
-    <div class="aboutdiv" id="skill">
-      <h5 class="aboutDivHead">
-        Skill
-      </h5>
-      <h5 class="aboutdivFont skill">
-        <table>
-            <tr>
-              <th>Programming Languages</th>
-              <td>Python, MATLAB, C++, JavaScript</td>
-            </tr>
-            <tr>
-              <th>Software Skills</th>
-              <td>PSpice, Proteus, DipTrace, SolidWorks 3D, ANSYS Fluent, COMSOL Multiphysics, AutoCAD</td>
-            </tr>
-            <tr>
-              <th>Visualization</th>
-              <td>OpenCV (Image Processing), OriginPro, ParaView, Matplotlib</td>
-            </tr>
-            <tr>
-              <th>ML/DL</th>
-              <td>TensorFlow, Keras, Matplotlib, NumPy, Pandas, Scikit-learn, Reinforcement Learning, YOLOv5</td>
-            </tr>
-            <tr>
-              <th>Data Analysis</th>
-              <td>SciPy, Excel (Advanced), Seaborn</td>
-            </tr>
-            <tr>
-              <th>Computer Vision</th>
-              <td>OpenCV, YOLOv5, LabelImg</td>
-            </tr>
-            <tr>
-              <th>Microcontrollers</th>
-              <td>Raspberry Pi, ESP32-CAM, Arduino, TTGO Camera Plus</td>
-            </tr>
-            <tr>
-              <th>Frameworks/Platforms</th>
-              <td>Flask, Django</td>
-            </tr>
-            <tr>
-              <th>Operating Systems</th>
-              <td>Ubuntu, Kali Linux, Raspbian</td>
-            </tr>
-            <tr>
-              <th>Mobile Applications</th>
-              <td>Flutter, Firebase</td>
-            </tr>
-            <tr>
-              <th>Version Control</th>
-              <td>Git, GitHub</td>
-            </tr>
-            <tr>
-              <th>Design Tools</th>
-              <td>Illustrator, Figma, Adobe XD, Adobe Photoshop, Adobe Premiere Pro</td>
-            </tr>
-            <tr>
-              <th>Hosting Platforms</th>
-              <td>Azure, Firebase, Google Cloud, Heroku, Vercel</td>
-            </tr>
-            <tr>
-              <th>Server & Testing</th>
-              <td>Nginx, Apache, Selenium, Postman, Docker</td>
-            </tr>
-            <tr>
-              <th>Developer Platforms</th>
-              <td>HackerRank (Problem solving: Gold Level), Kaggle, Stack Overflow</td>
-            </tr>
-            <tr>
-              <th>Other Tools</th>
-              <td>Wireshark, REST API, MQTT</td>
-            </tr>
-        </table>
-        
-        
-
-      </h5>
-    </div>
-
-    <div id="contact">
-      <div style="text-align: center; margin-top: 5%;" class="aboutDivHead">Contact</div>
-      <div class="contact" id="contact-section" style="text-align: center; padding: 20px;">
-        <a style="text-decoration: none;" href="https://scholar.google.com/citations?user=d3VplMYAAAAJ&hl=en" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg>    </a>
-     
-        <!-- GitHub Icon -->
-        <a style="text-decoration: none;" href="https://github.com/hedayet13" target="_blank">
-          <!-- <i class="bi bi-github" style="color: black;"></i> -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-        </a>
-        <a style="text-decoration: none;" href="https://orcid.org/0009-0007-5734-5316" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#358a24" d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
-      </a>
-        <!-- Facebook Icon -->
-        <a class="" style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=100088359264911" >
-          <!-- <i class="bi bi-facebook" style="color: blue;"></i> -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#1877f2" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-        </a>
-
-        <!-- LinkedIn Icon -->
-        <a style="text-decoration: none;" href="https://www.linkedin.com/in/md-hedayetul-islam-329205197/" target="_blank">
-          <!-- <i class="bi bi-linkedin"></i> -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#2a67bc" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-        </a>
-
-        <!-- ORCID Icon -->
-        <a style="text-decoration: none;" href="mailto:islamhedayet67@gmail.com?subject = Feedback&body = Message">
-          <!-- <i class="bi bi-envelope" style="color: red;"></i> -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d64d3b" d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-        </a>
-        
-       <!-- <a href="sdf"> sdff</a> -->
-        </div>
-      
-      <div style="text-align: center;">
-        <a href="" style="font-family: Montserrat;color: #18575c;">Designed by Hedayetul Islam <br> All rights reserved</a>
-      </div>
-      
-    </div>
-    
+<!-- Mobile drawer only (no scroll-hide logic) -->
+<script>
+const btn = document.getElementById('menuBtn');
+const drawer = document.getElementById('drawer');
+if (btn && drawer) {
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    drawer.hidden = open;
+    drawer.classList.toggle('open', !open);
+  });
+}
+</script>
 
 </body>
-
 </html>
