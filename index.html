@@ -68,12 +68,38 @@
     </p>
 
     <div class="cta-row">
-      <a class="btn" href="#projects">View projects</a>
+      <a class="btn" href="about.html#projects">View projects</a>
       <a class="btn yt" href="https://www.youtube.com/@hedayetulislam8211" target="_blank" rel="noopener">YouTube</a>
       <a class="btn" href="https://github.com/hedayet13" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="Documents/cv.pdf" target="_blank" rel="noopener">CV</a>
     </div>
   </section>
+
+
+  <!-- <section class="stats">
+  <div class="stat"><strong>4+</strong><span>Years in Embedded</span></div>
+  <div class="stat"><strong>25</strong><span>Projects</span></div>
+  <div class="stat"><strong>8</strong><span>Publications</span></div>
+  <div class="stat"><strong>3</strong><span>Talks / Workshops</span></div>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills & Tools</h2>
+  <ul class="skill-tags">
+    <li>Embedded C/C++</li><li>ESP32</li><li>STM32</li>
+    <li>Python</li><li>PyTorch</li><li>OpenCV</li>
+    <li>Signal Processing</li><li>CFD (Fluent)</li><li>SolidWorks</li>
+    <li>PCB Design</li><li>3D Printing</li><li>Flutter</li>
+  </ul>
+</section> -->
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script>
+  const t=document.getElementById('toTop');
+  window.addEventListener('scroll',()=>t.classList.toggle('show', scrollY>600));
+  t.addEventListener('click',()=>window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+
+
 
   <!-- PROJECTS -->
   <section id="projects">

@@ -585,6 +585,11 @@ if (btn && drawer) {
   });
 }
 </script>
-
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script>
+  const t=document.getElementById('toTop');
+  window.addEventListener('scroll',()=>t.classList.toggle('show', scrollY>600));
+  t.addEventListener('click',()=>window.scrollTo({top:0, behavior:'smooth'}));
+</script>
 </body>
 </html>

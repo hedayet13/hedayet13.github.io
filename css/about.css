@@ -726,3 +726,27 @@ body { padding-top: var(--nav-h); }
   .pub-card{ grid-template-columns: 1fr; }
   .pub-meta{ grid-auto-flow: column; justify-content: start; gap: 10px; }
 }
+@media (max-width: 640px){
+  .grid{ grid-template-columns: 1fr; gap: 12px; }
+  .card{ height: auto; }
+  .thumb{ aspect-ratio: 4 / 3; padding: 6px; } /* pill stays inset */
+  .card-body{ padding: 14px; gap: 8px; }
+  .section-head{ align-items: flex-start; }
+  .section-head .btn{ order: 2; margin-top: 8px; }
+  .btn{ padding: 12px 16px; line-height: 1; }
+  .btn:hover{ box-shadow: 0 0 0 3px var(--ring), var(--shadow-1); }
+  .hero{ padding: 56px 16px 40px; }
+  .container{ padding: 0 16px; }
+}
+.stats{max-width:1200px;margin:0 auto 20px;padding:0 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px;text-align:center}
+.stat strong{font-size:22px;display:block}
+.stat span{color:var(--muted);font-size:14px}
+.skills{max-width:1200px;margin:8px auto 24px;padding:0 16px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0}
+.skill-tags li{font-family:"Fira Mono",monospace;font-size:12px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.case .case-card{max-width:1200px;margin:0 auto;padding:16px;border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08)}
+.to-top{position:fixed;right:16px;bottom:16px;display:none;border:1px solid rgba(255,255,255,.16);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));color:var(--text);padding:10px 12px;border-radius:12px}
+.to-top.show{display:inline-flex}
+@media (max-width: 768px){.stats{grid-template-columns:repeat(2,1fr)}}
+
