@@ -23,6 +23,95 @@
   --step-5: clamp(40px, 5.0vw + 14px, 56px);
 }
 
+/* ==== Modern Light Theme (not fully white) ==== */
+:root[data-theme="light"]{
+  /* Surfaces */
+  --bg:       #f5f7fa;   /* page background: cool grey */
+  --bg-elev:  #f9fbfd;   /* elevated nav / sheets */
+  --card:     #fcfdfd;   /* cards: near-white with a hint of blue */
+
+  /* Text */
+  --text:  #0f172a;  /* slate-900 */
+  --muted: #475569;  /* slate-600 */
+
+  /* Brand */
+  --brand:   #00a896;     /* softened teal */
+  --brand-2: #0f7a83;     /* deeper teal for depth */
+  --ring:    rgba(0,168,150,.22);
+
+  /* Elevation */
+  --shadow-1: 0 6px 16px rgba(2, 6, 23, .06);
+  --shadow-2: 0 18px 36px rgba(2, 6, 23, .10);
+}
+
+/* Page backdrop — gentle cool tint, not white */
+:root[data-theme="light"] body{
+  background:
+    radial-gradient(1000px 500px at 10% -10%, rgba(0,168,150,.08), transparent 60%),
+    radial-gradient(900px 400px at 110% 10%, rgba(15,122,131,.07), transparent 60%),
+    var(--bg);
+  color: var(--text);
+}
+
+/* Navbar: frosted, slightly elevated */
+:root[data-theme="light"] .navbar{
+  background: rgba(249, 251, 253, .78);
+  border-bottom: 1px solid rgba(2, 6, 23, .06);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px rgba(2, 6, 23, .06);
+}
+
+/* Buttons: subtle glass look that fits light mode */
+:root[data-theme="light"] .btn{
+  color: var(--text);
+  border-color: rgba(2, 6, 23, .10);
+  background: linear-gradient(180deg, rgba(2,6,23,.04), rgba(2,6,23,.02));
+}
+:root[data-theme="light"] .btn:hover{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px var(--ring), var(--shadow-1);
+}
+
+/* Cards & list items */
+:root[data-theme="light"] .card{
+  background: linear-gradient(180deg, rgba(2,6,23,.015) 0%, rgba(2,6,23,.008) 100%), var(--card);
+  border: 1px solid rgba(2, 6, 23, .08);
+  box-shadow: var(--shadow-1);
+}
+:root[data-theme="light"] .card:hover{
+  box-shadow: var(--shadow-2), 0 0 0 6px var(--ring);
+}
+
+/* Tags/pills */
+:root[data-theme="light"] .tag{
+  background: rgba(2, 6, 23, .04);
+  border: 1px solid rgba(2, 6, 23, .10);
+  color: #1f2937;
+}
+
+/* Social buttons */
+:root[data-theme="light"] .socials a{
+  background: linear-gradient(180deg, rgba(2,6,23,.04), rgba(2,6,23,.02));
+  border: 1px solid rgba(2,6,23,.08);
+  color: var(--text);
+}
+
+/* Links in the nav for light mode */
+:root[data-theme="light"] .nav-links a:hover{
+  background: rgba(2,6,23,.05);
+}
+
+/* Drawer (mobile) in light mode */
+:root[data-theme="light"] .drawer{
+  background: rgba(249,251,253,.95);
+  border-top: 1px solid rgba(2,6,23,.06);
+}
+:root[data-theme="light"] .drawer a{
+  border-bottom: 1px solid rgba(2,6,23,.05);
+}
+
+
+
 *{ box-sizing: border-box; }
 html, body{ height:100%; scroll-behavior:smooth; }
 html{ background-color: var(--bg); background-attachment: fixed; }
