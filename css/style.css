@@ -326,3 +326,25 @@ img{ max-width: 100%; height: auto; display:block; }
 
 
 
+/* ===== News ===== */
+.news-list{ list-style:none; padding:0; margin:0; display:grid; gap:10px; }
+.news-item{
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px; padding: 14px;
+  box-shadow: var(--shadow-1);
+}
+.news-title{ margin: 4px 0 4px; font-size: var(--step-2); }
+.news-title a{ color: var(--text); text-decoration:none; }
+.news-title a:hover{ color: var(--brand); }
+.news-sum{ margin: 0; color: var(--muted); font-size: var(--step-1); }
+.news-meta{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.news-date{ font-family:"Fira Mono", monospace; font-size:12px; color: var(--muted); }
+.news-tags{ display:flex; gap:6px; flex-wrap:wrap; }
+.tag.mini{ font-size:11px; padding:5px 8px; }
+
+/* Light mode adjustments */
+:root[data-theme="light"] .news-item{
+  background: linear-gradient(180deg, rgba(2,6,23,.015), rgba(2,6,23,.01));
+  border: 1px solid rgba(2,6,23,.08);
+}

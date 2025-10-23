@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Website v2.0 launched",
+    "date": "2025-10-23",
+    "summary": "Welcome to my new portfolio. Redesigned and improved user experience.",
+    "url": "",
+    "tags": ["Website"]
+  },
+  {
+    "title": "Paper accepted at IEEE ACCESS",
+    "date": "2025-08-01",
+    "summary": "LLM-enhanced IoT security: anomaly detection and malicious device identification",
+    "url": "",
+    "tags": ["Publication"]
+  },
+  {
+    "title": "Paper accepted at AIP Physics of Fluids",
+    "date": "2024-01-01",
+    "summary": "Design optimization of anti-splashing targets and simulation of droplet impact on it.",
+    "url": "",
+    "tags": ["Publication"]
+  },
+  {
+    "title": "Implemented our centralized ICU monitoring device at Chittagong General Hospital",
+    "date": "2022-01-10",
+    "summary": "Deployed in a local hospital to monitor 10 ICU beds simultaneously.",
+    "url": "https://stellarbd.com/icu",
+    "tags": ["Release","ICU"]
+  },
+  {
+    "title": "Talk: Battery-Free Wearables",
+    "date": "2023-10-28",
+    "summary": "Presented my research on battery-free wearable devices at our university courses lecture.",
+    "url": "",
+    "tags": ["Talk"]
+  },
+  {
+    "title": "Collaborate on a project with my senior about Diabetic Retinopathy",
+    "date": "2020-05-14",
+    "summary": "Developed a deep learning model to detect diabetic retinopathy from retinal images.",
+    "url": "",
+    "tags": ["Journal"]
+  },
+  {
+    "title": "My first Hackathon experience",
+    "date": "2020-02-19",
+    "summary": "Participated in national hackathon on frontier technologies. Presented our idea on occupational health and safety",
+    "url": "",
+    "tags": ["Hackathon"]
+  },
+  {
+    "title": "Prototyping my first speaker",
+    "date": "2019-01-21",
+    "summary": "Available part-time for projects.",
+    "url": "",
+    "tags": ["Web"]
+  }
+]
