@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/logo.png" />
   <!-- Styles -->
 </head>
 <body>
@@ -19,21 +21,34 @@
     <div class="nav-inner">
       <div class="brand">
         <div class="brand-badge" aria-hidden="true">HI</div>
-        <span>Hedayetul&nbsp;Islam</span>
+        <span>Hedayetul&nbsp;Islam</span> 
       </div>
 
       <!-- Desktop links -->
-      <nav class="nav-links" aria-label="Primary">
-        <a href="about.html">About Me!</a>
-        <a href="#projects">Projects</a>
-        <a href="#presentations">Presentations</a>
-        <a href="#news">News!</a>
-        <a href="#contact" class="btn">Contact</a>
-        <a href="Documents/cv.pdf" target="_blank" class="btn hide-mobile">CV</a>
-      </nav>
+      <!-- Desktop links -->
+<!-- Desktop links -->
+<nav class="nav-links" aria-label="Primary">
+  <a href="about.html">About Me!</a>
+  <a href="#projects">Projects</a>
+  <a href="#presentations">Presentations</a>
+  <a href="#news">News!</a>
+  <a href="#contact" class="btn">Contact</a>
+  <a href="Documents/cv.pdf" target="_blank" class="btn hide-mobile">CV</a>
+
+  <!-- Theme toggle (NEW) -->
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+    <span class="icon icon-sun">☼</span>
+    <span class="icon icon-moon">☾</span>
+  </button>
+</nav>
+
+
+<!-- Theme toggle (outside nav-links) -->
+
 
       <!-- Mobile menu toggle -->
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        
         <span aria-hidden="true">☰</span>
         <span class="visually-hidden">Toggle menu</span>
       </button>
@@ -47,7 +62,10 @@
       <a href="#news">News!</a>
       <a href="#contact">Contact</a>
       <a href="Documents/cv.pdf" target="_blank">CV</a>
-      
+       <button id="themeToggleMobile" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+    <span class="icon icon-sun">☼</span>
+    <span class="icon icon-moon">☾</span>
+  </button>
     </nav>
   </header>
 
@@ -413,6 +431,32 @@
           ${sum}
         </li>`;
     }
+  })();
+</script>
+
+
+<script>
+  (function(){
+    const root = document.documentElement;
+    const btns = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')].filter(Boolean);
+
+    // Load saved theme
+    const saved = localStorage.getItem('theme'); // 'light' or 'dark'
+    if (saved === 'light') root.setAttribute('data-theme','light');
+    else root.removeAttribute('data-theme'); // default dark
+
+    // Toggle handler
+    function toggleTheme(){
+      const isLight = root.getAttribute('data-theme') === 'light';
+      if (isLight){
+        root.removeAttribute('data-theme');     // back to dark
+        localStorage.setItem('theme','dark');
+      } else {
+        root.setAttribute('data-theme','light');
+        localStorage.setItem('theme','light');
+      }
+    }
+    btns.forEach(b => b.addEventListener('click', toggleTheme));
   })();
 </script>
 

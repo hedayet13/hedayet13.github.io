@@ -18,7 +18,10 @@
       <span class="brand-badge">HI</span>
       <span>Hedayetul Islam</span>
     </a>
+    
+    
     <nav class="nav-links">
+      
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#publication">Publications</a>
@@ -27,7 +30,12 @@
       <a href="#courses">Courses</a>
       <a href="#skill">Skills</a>
       <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+    <span class="icon icon-sun">☼</span>
+    <span class="icon icon-moon">☾</span>
+  </button>
     </nav>
+    
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="drawer">Menu</button>
   </div>
   <nav id="drawer" class="drawer" hidden>
@@ -39,6 +47,10 @@
     <a href="#courses">Courses</a>
     <a href="#skill">Skills</a>
     <a href="#contact">Contact</a>
+    <button id="themeToggleMobile" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+    <span class="icon icon-sun">☼</span>
+    <span class="icon icon-moon">☾</span>
+  </button>
   </nav>
 </header>
 
@@ -139,7 +151,7 @@
         <div class="pub-meta">
           <span class="pub-badge">Journal</span>
           <span class="pub-journal">IEEE Access</span>
-          <span class="pub-year">2024</span>
+          <span class="pub-year">2025</span>
         </div>
 
         <div class="pub-body">
@@ -602,5 +614,31 @@ if (btn && drawer) {
   window.addEventListener('scroll',()=>t.classList.toggle('show', scrollY>600));
   t.addEventListener('click',()=>window.scrollTo({top:0, behavior:'smooth'}));
 </script>
+
+<script>
+  (function(){
+    const root = document.documentElement;
+    const btns = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')].filter(Boolean);
+
+    // Load saved theme
+    const saved = localStorage.getItem('theme'); // 'light' or 'dark'
+    if (saved === 'light') root.setAttribute('data-theme','light');
+    else root.removeAttribute('data-theme'); // default dark
+
+    // Toggle handler
+    function toggleTheme(){
+      const isLight = root.getAttribute('data-theme') === 'light';
+      if (isLight){
+        root.removeAttribute('data-theme');     // back to dark
+        localStorage.setItem('theme','dark');
+      } else {
+        root.setAttribute('data-theme','light');
+        localStorage.setItem('theme','light');
+      }
+    }
+    btns.forEach(b => b.addEventListener('click', toggleTheme));
+  })();
+</script>
+
 </body>
 </html>

@@ -21,6 +21,178 @@
   --step-5: clamp(40px, 5.0vw + 14px, 56px);
 }
 
+/* ------------------------------
+   Light theme (toggle via:
+   <html data-theme="light"> … )
+   ------------------------------*/
+:root[data-theme="light"]{
+  --bg: #f7fafc;                 /* page base */
+  --bg-elev: #ffffff;            /* elevated surfaces */
+  --text: #0f172a;               /* slate-900 */
+  --muted: #475569;              /* slate-600 */
+  --brand: #0ea5a4;              /* teal-600-ish */
+  --brand-2: #0f7880;
+  --card: #ffffff;
+  --ring: rgba(14,165,164,.22);
+  --shadow-1: 0 8px 22px rgba(2,6,23,.08);
+  --shadow-2: 0 18px 42px rgba(2,6,23,.12);
+}
+
+/* Page background */
+:root[data-theme="light"] html{
+  background-color: var(--bg);
+}
+:root[data-theme="light"] body{
+  color: var(--text);
+  background:
+    radial-gradient(1100px 520px at 12% -8%, rgba(14,165,164,.10), transparent 60%),
+    radial-gradient(1000px 480px at 110% 8%, rgba(2,132,199,.08), transparent 60%),
+    linear-gradient(180deg,#f7fafc 0%, #f6f9fb 45%, #f4f7fa 100%);
+}
+
+/* Header / Navbar */
+:root[data-theme="light"] .navbar{
+  background: rgba(248,250,252,.75);
+  border-bottom: 1px solid rgba(2,6,23,.06);
+  backdrop-filter: blur(8px);
+}
+:root[data-theme="light"] .nav-links a{
+  color: var(--muted);
+}
+:root[data-theme="light"] .nav-links a:hover{
+  color: var(--text);
+  background: rgba(2,6,23,.06);
+}
+
+/* Buttons */
+:root[data-theme="light"] .btn{
+  border: 1px solid rgba(2,6,23,.12);
+  background: linear-gradient(180deg, rgba(2,6,23,.04), rgba(2,6,23,.02));
+  color: var(--text);
+  box-shadow: var(--shadow-1);
+}
+:root[data-theme="light"] .btn:hover{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px var(--ring), var(--shadow-1);
+}
+:root[data-theme="light"] .yt{ border-color: #ef4444; }
+:root[data-theme="light"] .yt:hover{ box-shadow: 0 0 0 6px rgba(239,68,68,.16), var(--shadow-1); }
+
+/* Hero chip */
+:root[data-theme="light"] .chip{
+  border: 1px dashed rgba(2,6,23,.22);
+  color: var(--muted);
+}
+
+/* Section fade */
+:root[data-theme="light"] section .container::before{
+  background: linear-gradient(to bottom, rgba(248,250,252,.75), rgba(248,250,252,0));
+}
+
+/* Cards / grid items */
+:root[data-theme="light"] .card{
+  background: linear-gradient(180deg, rgba(2,6,23,.03) 0%, rgba(2,6,23,.01) 100%);
+  border: 1px solid rgba(2,6,23,.08);
+  box-shadow: var(--shadow-1);
+}
+:root[data-theme="light"] .card:hover{
+  border-color: rgba(14,165,164,.35);
+  box-shadow: var(--shadow-2), 0 0 0 6px var(--ring);
+}
+:root[data-theme="light"] .thumb{
+  border-bottom: 1px solid rgba(2,6,23,.06);
+}
+:root[data-theme="light"] .pill{
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(2,6,23,.12);
+  color: #0f172a;
+}
+
+/* Text tones inside cards/lists */
+:root[data-theme="light"] .card p,
+:root[data-theme="light"] .section-desc,
+:root[data-theme="light"] .contact p{
+  color: var(--muted);
+}
+
+/* Tags / chips */
+:root[data-theme="light"] .tag,
+:root[data-theme="light"] .skill-tags li{
+  background: rgba(2,6,23,.04);
+  border: 1px solid rgba(2,6,23,.12);
+  color: #0f3535;
+}
+
+/* Lists (Presentations) */
+:root[data-theme="light"] .list a{
+  background: linear-gradient(180deg, rgba(2,6,23,.025), rgba(2,6,23,.01));
+  border: 1px solid rgba(2,6,23,.10);
+  color: var(--text);
+}
+:root[data-theme="light"] .list a:hover{
+  border-color: rgba(14,165,164,.35);
+}
+:root[data-theme="light"] .bullet{
+  box-shadow: 0 0 0 6px var(--ring);
+}
+
+/* Contact section + footer */
+:root[data-theme="light"] .contact{
+  border-top: 1px solid rgba(2,6,23,.08);
+}
+:root[data-theme="light"] footer{
+  color: var(--muted);
+}
+:root[data-theme="light"] .socials a{
+  background: linear-gradient(180deg, rgba(2,6,23,.04), rgba(2,6,23,.02));
+  border: 1px solid rgba(2,6,23,.10);
+  color: var(--text);
+}
+:root[data-theme="light"] .socials a:hover{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 6px var(--ring);
+}
+
+/* Drawer / mobile menu */
+:root[data-theme="light"] .drawer{
+  background: rgba(255,255,255,.96);
+  border-top: 1px solid rgba(2,6,23,.08);
+}
+:root[data-theme="light"] .drawer a{
+  color: var(--text);
+  border-bottom: 1px solid rgba(2,6,23,.06);
+}
+:root[data-theme="light"] .drawer a:hover{ background: rgba(2,6,23,.06); }
+
+/* Stats, skills, cases, to-top */
+:root[data-theme="light"] .stat,
+:root[data-theme="light"] .case .case-card{
+  background: linear-gradient(180deg, rgba(2,6,23,.03), rgba(2,6,23,.015));
+  border: 1px solid rgba(2,6,23,.10);
+}
+:root[data-theme="light"] .to-top{
+  border: 1px solid rgba(2,6,23,.14);
+  background: linear-gradient(180deg, rgba(2,6,23,.04), rgba(2,6,23,.02));
+  color: var(--text);
+}
+
+/* News */
+:root[data-theme="light"] .news-item{
+  background: linear-gradient(180deg, rgba(2,6,23,.02), rgba(2,6,23,.01));
+  border: 1px solid rgba(2,6,23,.10);
+}
+:root[data-theme="light"] .news-title a{ color: var(--text); }
+:root[data-theme="light"] .news-title a:hover{ color: var(--brand); }
+:root[data-theme="light"] .news-date{ color: var(--muted); }
+:root[data-theme="light"] .tag.mini{
+  background: rgba(2,6,23,.04);
+  border: 1px solid rgba(2,6,23,.12);
+  color: #0f3535;
+}
+
+
+
+
 *{ box-sizing: border-box; }
 html,
 body{ height:100%; scroll-behavior:smooth; }
@@ -62,9 +234,7 @@ body{
 .brand-badge{
   height: 34px; width: 34px; border-radius: 10px;
   background: linear-gradient(135deg, var(--brand), #2de0d3);
-  display:grid; place-items:center; font-weight:900; color:#001715;
-  box-shadow: 0 6px 18px rgba(0,179,164,.25);
-  flex: none;
+  display:grid; place-items:center; font-weight:900; color:#001715; box-shadow: 0 6px 18px rgba(0,179,164,.25);
 }
 
 /* Desktop links */
@@ -343,8 +513,42 @@ img{ max-width: 100%; height: auto; display:block; }
 .news-tags{ display:flex; gap:6px; flex-wrap:wrap; }
 .tag.mini{ font-size:11px; padding:5px 8px; }
 
-/* Light mode adjustments */
-:root[data-theme="light"] .news-item{
-  background: linear-gradient(180deg, rgba(2,6,23,.015), rgba(2,6,23,.01));
-  border: 1px solid rgba(2,6,23,.08);
+/* Theme toggle pill */
+.theme-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:36px; margin-left:10px;
+  border-radius:10px; cursor:pointer;
+  border:1px solid rgba(255,255,255,.16);
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  color:var(--text); box-shadow: var(--shadow-1);
 }
+.theme-toggle:hover{ box-shadow:0 0 0 4px var(--ring), var(--shadow-1); }
+.theme-toggle .icon{ display:none; }
+
+/* Desktop: keep visible even though .menu-btn is hidden */
+@media (min-width:768px){
+  .menu-btn{ display:none; }      /* this hides the hamburger only */
+  .theme-toggle{ display:inline-flex; }
+}
+
+/* Light theme look for the pill */
+:root[data-theme="light"] .theme-toggle{
+  border-color: rgba(2,6,23,.12);
+  background: linear-gradient(180deg, rgba(2,6,23,.04), rgba(2,6,23,.02));
+}
+
+/* Icon swapping:
+   - DARK (default): show MOON
+   - LIGHT: show SUN */
+.theme-toggle .icon-moon{ display:inline; }
+:root[data-theme="light"] .theme-toggle .icon-moon{ display:none; }
+:root[data-theme="light"] .theme-toggle .icon-sun{ display:inline; }
+.theme-toggle{ /* visible by default */ }
+@media (min-width:768px){
+  .menu-btn{ display:none; }   /* hides the hamburger ONLY */
+  .theme-toggle{ display:inline-flex; } /* keeps toggle visible */
+}
+/* icon swap */
+.theme-toggle .icon-moon{ display:inline; }
+:root[data-theme="light"] .theme-toggle .icon-moon{ display:none; }
+:root[data-theme="light"] .theme-toggle .icon-sun{ display:inline; }
