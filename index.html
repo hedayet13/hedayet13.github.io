@@ -9,11 +9,14 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="images/logo.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" />
   <!-- Styles -->
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -21,34 +24,34 @@
     <div class="nav-inner">
       <div class="brand">
         <div class="brand-badge" aria-hidden="true">HI</div>
-        <span>Hedayetul&nbsp;Islam</span> 
+        <span>Hedayetul&nbsp;Islam</span>
       </div>
 
       <!-- Desktop links -->
       <!-- Desktop links -->
-<!-- Desktop links -->
-<nav class="nav-links" aria-label="Primary">
-  <a href="about.html">About Me!</a>
-  <a href="#projects">Projects</a>
-  <a href="#presentations">Presentations</a>
-  <a href="#news">News!</a>
-  <a href="#contact" class="btn">Contact</a>
-  <a href="Documents/cv.pdf" target="_blank" class="btn hide-mobile">CV</a>
+      <!-- Desktop links -->
+      <nav class="nav-links" aria-label="Primary">
+        <a href="about.html">About Me!</a>
+        <a href="#projects">Projects</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#news">News!</a>
+        <a href="#contact" class="btn">Contact</a>
+        <a href="Documents/cv.pdf" target="_blank" class="btn hide-mobile">CV</a>
 
-  <!-- Theme toggle (NEW) -->
-  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-    <span class="icon icon-sun">☼</span>
-    <span class="icon icon-moon">☾</span>
-  </button>
-</nav>
+        <!-- Theme toggle (NEW) -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="icon icon-sun">☼</span>
+          <span class="icon icon-moon">☾</span>
+        </button>
+      </nav>
 
 
-<!-- Theme toggle (outside nav-links) -->
+      <!-- Theme toggle (outside nav-links) -->
 
 
       <!-- Mobile menu toggle -->
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
-        
+
         <span aria-hidden="true">☰</span>
         <span class="visually-hidden">Toggle menu</span>
       </button>
@@ -56,16 +59,16 @@
 
     <!-- Mobile drawer -->
     <nav id="mobileMenu" class="drawer" aria-label="Mobile">
-       <a href="about.html">About Me!</a>
+      <a href="about.html">About Me!</a>
       <a href="#projects">Projects</a>
       <a href="#presentations">Presentations</a>
       <a href="#news">News!</a>
       <a href="#contact">Contact</a>
       <a href="Documents/cv.pdf" target="_blank">CV</a>
-       <button id="themeToggleMobile" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-    <span class="icon icon-sun">☼</span>
-    <span class="icon icon-moon">☾</span>
-  </button>
+      <button id="themeToggleMobile" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="icon icon-sun">☼</span>
+        <span class="icon icon-moon">☾</span>
+      </button>
     </nav>
   </header>
 
@@ -74,16 +77,17 @@
     <div class="chip">Hello, my name is</div>
     <h1 class="title">Hedayetul Islam</h1>
     <h2 class="subtitle">
-  I build things for
-  <span class="rotator" aria-live="polite">
-    <span class="word">biotech</span>
-    <span class="word">automation</span>
-    <span class="word">nature</span>
-  </span>
-</h2>
+      I build things for
+      <span class="rotator" aria-live="polite">
+        <span class="word">biotech</span>
+        <span class="word">automation</span>
+        <span class="word">nature</span>
+      </span>
+    </h2>
 
     <p class="intro">
-      I'm an electrical engineer specializing in embedded systems, medical image processing and occasionally designing, 3D printing and coding. Currently, I'm focused on Wearable Electronics, Machine learning and Bio-Engineering.
+      I'm an electrical engineer specializing in embedded systems, medical image processing and occasionally designing,
+      3D printing and coding. Currently, I'm focused on Wearable Electronics, Machine learning and Bio-Engineering.
       <a href="about.html" style="color: var(--brand); font-weight:700; text-decoration:none;">More →</a>
     </p>
 
@@ -112,12 +116,12 @@
     <li>PCB Design</li><li>3D Printing</li><li>Flutter</li>
   </ul>
 </section> -->
-<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
-<script>
-  const t=document.getElementById('toTop');
-  window.addEventListener('scroll',()=>t.classList.toggle('show', scrollY>600));
-  t.addEventListener('click',()=>window.scrollTo({top:0, behavior:'smooth'}));
-</script>
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+  <script>
+    const t = document.getElementById('toTop');
+    window.addEventListener('scroll', () => t.classList.toggle('show', scrollY > 600));
+    t.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 
 
 
@@ -142,9 +146,11 @@
           <div class="card-body">
             <h3>AI‑based IoT Security</h3>
             <p>
-              Internet of Things (IoT) devices often lack built-in security systems, making them vulnerable to zero-day attacks.
-      We propose a machine learning-based framework with large language model (LLM) integration to reduce false positives
-      and bridge the semantic gap for operators.
+              Internet of Things (IoT) devices often lack built-in security systems, making them vulnerable to zero-day
+              attacks.
+              We propose a machine learning-based framework with large language model (LLM) integration to reduce false
+              positives
+              and bridge the semantic gap for operators.
             </p>
             <div class="tags">
               <span class="tag">Scikit‑learn</span><span class="tag">GPT‑4o mini</span><span class="tag">MQTT</span>
@@ -155,14 +161,17 @@
 
         <!-- Bio‑Inspired Surface Engineering -->
         <article class="card span-6 span-4-lg">
-          <a class="thumb" href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" target="_blank" rel="noopener">
+          <a class="thumb"
+            href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext"
+            target="_blank" rel="noopener">
             <img src="images/Lotus3.jpg" alt="Anti-splashing surface with lotus effect" />
             <span class="pill">Featured</span>
           </a>
           <div class="card-body">
             <h3>Bio‑Inspired Anti‑Splashing Surface</h3>
             <p>
-              CFD‑driven design and rapid prototyping of textures to minimize splashing. Structures fabricated in SLA resin and PDMS; parameters tuned in Ansys Fluent.
+              CFD‑driven design and rapid prototyping of textures to minimize splashing. Structures fabricated in SLA
+              resin and PDMS; parameters tuned in Ansys Fluent.
             </p>
             <div class="tags">
               <span class="tag">CFD</span><span class="tag">Ansys‑Fluent</span><span class="tag">SolidWorks</span>
@@ -188,7 +197,8 @@
               <span class="tag">OpenCV</span><span class="tag">Tesseract‑OCR</span><span class="tag">Flutter</span>
             </div>
             <div class="cta-row">
-              <a class="btn" href="https://github.com/hedayet13/ICU-Monitoring-Device" target="_blank" rel="noopener">Repo</a>
+              <a class="btn" href="https://github.com/hedayet13/ICU-Monitoring-Device" target="_blank"
+                rel="noopener">Repo</a>
               <a class="btn" href="/Documents/report/icuMonitoring.pdf" target="_blank" rel="noopener">Report</a>
               <a class="btn" href="/Documents/presentations/icuMonitoring.pdf" target="_blank" rel="noopener">Slides</a>
               <a class="btn" href="https://stellarbd.com/icu" target="_blank" rel="noopener">Live</a>
@@ -259,25 +269,26 @@
 
 
   <!-- NEWS -->
-<section id="news">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>News (Under maintenance)</h2>
-        <div class="section-desc">Most recent updates (last 5).</div>
+  <section id="news">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>News (Under maintenance)</h2>
+          <div class="section-desc">Most recent updates (last 5).</div>
+        </div>
+        <a class="btn" href="news.html">View all news</a>
       </div>
-      <a class="btn" href="news.html">View all news</a>
-    </div>
 
-    <ul id="newsList" class="news-list" aria-live="polite"></ul>
-  </div>
-</section>
+      <ul id="newsList" class="news-list" aria-live="polite"></ul>
+    </div>
+  </section>
 
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
     <h2>Get in touch</h2>
-    <p>Although I'm currently exploring new opportunities, I'm always open. Whether you have a question or just want to say hi, I'll try my best to get back to you.</p>
+    <p>Although I'm currently exploring new opportunities, I'm always open. Whether you have a question or just want to
+      say hi, I'll try my best to get back to you.</p>
     <div class="cta-row" style="justify-content:center;">
       <a class="btn" href="mailto:islamhedayet67@gmail.com?subject=Feedback&body=Message">Say hello</a>
       <a class="btn" href="Documents/cv.pdf" target="_blank" rel="noopener">Download CV</a>
@@ -287,25 +298,46 @@
 
   <div class="socials">
     <a href="https://scholar.google.com/citations?user=d3VplMYAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M10.2 2L3 9.2v5.6L10.2 22v-4.7L6.4 12l3.8-5.3V2zm3.6 0v5.3L17.6 12l-3.8 5.3V22L21 14.8V9.2L13.8 2z"/>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <!-- Book + cap icon styled for Google Scholar -->
+        <path d="M12 3L1 9l11 6 9-4.91V20h2V9L12 3zM4 11.45V20h7v-5H4z" />
       </svg>
     </a>
+
     <a href="https://github.com/hedayet13" target="_blank" aria-label="GitHub">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.1-1.7-1.1-1.7-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1 3 .8.1-.7.3-1 .6-1.3-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1-3-.1-.3-.5-1.4.1-3 0 0 .9-.3 3 1 .8-.2 1.7-.4 2.6-.4.9 0 1.8.1 2.6.4 2.1-1.3 3-1 3-1 .6 1.6.2 2.7.1 3 .7.8 1 1.8 1 3 0 4.2-2.6 5-5.1 5.4.3.2.6.8.6 1.6v2.3c0 .3.2.7.8.6A10.9 10.9 0 0023.5 12c0-6.4-5.1-11.5-11.5-11.5z"/>
+        <path
+          d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.1-1.7-1.1-1.7-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1 3 .8.1-.7.3-1 .6-1.3-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1-3-.1-.3-.5-1.4.1-3 0 0 .9-.3 3 1 .8-.2 1.7-.4 2.6-.4.9 0 1.8.1 2.6.4 2.1-1.3 3-1 3-1 .6 1.6.2 2.7.1 3 .7.8 1 1.8 1 3 0 4.2-2.6 5-5.1 5.4.3.2.6.8.6 1.6v2.3c0 .3.2.7.8.6A10.9 10.9 0 0023.5 12c0-6.4-5.1-11.5-11.5-11.5z" />
       </svg>
     </a>
     <a href="https://orcid.org/0009-0007-5734-5316" target="_blank" aria-label="ORCID">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M12 0a12 12 0 100 24A12 12 0 0012 0zm-3.2 7.4v9.3H6.8V7.4h2zm3.5 0c2.9 0 4.6 1.9 4.6 4.7s-1.7 4.7-4.6 4.7h-2.2V7.4h2.2zm-.1 1.9h-1v5.7h1c1.6 0 2.6-1.1 2.6-2.9s-1-2.8-2.6-2.8z"/>
+        <path
+          d="M12 0a12 12 0 100 24A12 12 0 0012 0zm-3.2 7.4v9.3H6.8V7.4h2zm3.5 0c2.9 0 4.6 1.9 4.6 4.7s-1.7 4.7-4.6 4.7h-2.2V7.4h2.2zm-.1 1.9h-1v5.7h1c1.6 0 2.6-1.1 2.6-2.9s-1-2.8-2.6-2.8z" />
       </svg>
     </a>
     <a href="https://www.facebook.com/profile.php?id=100088359264911" target="_blank" aria-label="Facebook">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M22.5 0H1.5C.7 0 0 .7 0 1.5v21c0 .8.7 1.5 1.5 1.5h11.3v-9.2H9.7V10.5h3.1V8.1c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.4.1 2.7.1v3.2h-1.8c-1.4 0-1.7.7-1.7 1.6v2.3h3.4l-.4 3.3h-3v9.2h5.9c.8 0 1.5-.7 1.5-1.5v-21C24 .7 23.3 0 22.5 0z"/>
+        <path
+          d="M22.5 0H1.5C.7 0 0 .7 0 1.5v21c0 .8.7 1.5 1.5 1.5h11.3v-9.2H9.7V10.5h3.1V8.1c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.4.1 2.7.1v3.2h-1.8c-1.4 0-1.7.7-1.7 1.6v2.3h3.4l-.4 3.3h-3v9.2h5.9c.8 0 1.5-.7 1.5-1.5v-21C24 .7 23.3 0 22.5 0z" />
       </svg>
     </a>
+
+
+    <a href="https://www.instagram.com/hedayet.13" target="_blank" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <!-- outer rounded square -->
+        <path
+          d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7z" />
+        <!-- camera lens -->
+        <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6z" />
+        <!-- flash/dot -->
+        <circle cx="17.5" cy="6.5" r="1.5" />
+      </svg>
+    </a>
+
+
+
     <!-- <a href="https://www.linkedin.com/in/md-hedayetul-islam-329205197/" target="_blank" aria-label="LinkedIn">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
         <path d="M20.45 20.45h-3.55v-5.4c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.07 1.4-2.07 2.85v5.5H9.48V9h3.4v1.56h.05c.47-.9 1.6-1.84 3.3-1.84 3.53 0 4.18 2.32 4.18 5.34v6.39zM5.34 7.43a2.07 2.07 0 11.01-4.14 2.07 2.07 0 01-.01 4.14zM7.1 20.45H3.57V9h3.53v11.45zM22.23 0H1.77C.8 0 0 .8 0 1.77v20.46C0 23.2.8 24 1.77 24h20.46C23.2 24 24 23.2 24 22.23V1.77C24 .8 23.2 0 22.23 0z"/>
@@ -313,7 +345,7 @@
     </a> -->
     <a href="mailto:islamhedayet67@gmail.com" aria-label="Email">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
       </svg>
     </a>
   </div>
@@ -325,17 +357,17 @@
 
 
 
-  
+
   <!-- Tiny text rotator + mobile menu -->
   <script>
-    (function(){
+    (function () {
       // rotating subtitle
       const el = document.querySelector('.subtitle .rot');
-      const words = ['nature','biotech','automation'];
+      const words = ['nature', 'biotech', 'automation'];
       let i = 0;
-      setInterval(()=>{
-        i = (i+1) % words.length;
-        el.textContent = words[i === 0 ? words.length-1 : i-1] + ' · ' + words[i] + ' · ' + words[(i+1)%words.length];
+      setInterval(() => {
+        i = (i + 1) % words.length;
+        el.textContent = words[i === 0 ? words.length - 1 : i - 1] + ' · ' + words[i] + ' · ' + words[(i + 1) % words.length];
       }, 2600);
 
       // mobile menu
@@ -354,74 +386,74 @@
     })();
   </script>
   <script>
-(function() {
-  const navbar = document.getElementById('navbar');
-  let lastScrollY = window.scrollY;
-  let ticking = false;
+    (function () {
+      const navbar = document.getElementById('navbar');
+      let lastScrollY = window.scrollY;
+      let ticking = false;
 
-  function updateNavbar() {
-    const currentScrollY = window.scrollY;
-    const scrollDiff = currentScrollY - lastScrollY;
+      function updateNavbar() {
+        const currentScrollY = window.scrollY;
+        const scrollDiff = currentScrollY - lastScrollY;
 
-    if (Math.abs(scrollDiff) < 10) {
-      ticking = false;
-      return;
-    }
+        if (Math.abs(scrollDiff) < 10) {
+          ticking = false;
+          return;
+        }
 
-    if (currentScrollY > lastScrollY && currentScrollY > 80) {
-      // scrolling down → hide
-      navbar.classList.add('hide');
-      navbar.classList.remove('show');
-    } else {
-      // scrolling up → show
-      navbar.classList.remove('hide');
-      navbar.classList.add('show');
-    }
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+          // scrolling down → hide
+          navbar.classList.add('hide');
+          navbar.classList.remove('show');
+        } else {
+          // scrolling up → show
+          navbar.classList.remove('hide');
+          navbar.classList.add('show');
+        }
 
-    // add shadow when scrolled past top
-    if (currentScrollY > 20) navbar.classList.add('scrolled');
-    else navbar.classList.remove('scrolled');
+        // add shadow when scrolled past top
+        if (currentScrollY > 20) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
 
-    lastScrollY = currentScrollY;
-    ticking = false;
-  }
+        lastScrollY = currentScrollY;
+        ticking = false;
+      }
 
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(updateNavbar);
-      ticking = true;
-    }
-  });
-})();
-</script>
-
-<script>
-  (function(){
-    const list = document.getElementById('newsList');
-    if (!list) return;
-
-    fetch('data/news.json')
-      .then(r => r.json())
-      .then(items => {
-        const sorted = items
-          .slice()
-          .sort((a,b) => new Date(b.date) - new Date(a.date))
-          .slice(0,5);
-
-        list.innerHTML = sorted.map(renderItem).join('');
-      })
-      .catch(() => {
-        list.innerHTML = '<li class="news-item muted">Unable to load news right now.</li>';
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateNavbar);
+          ticking = true;
+        }
       });
+    })();
+  </script>
 
-    function renderItem(n){
-      const date = new Date(n.date);
-      const nice = date.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
-      const tags = (n.tags||[]).map(t => `<span class="tag mini">${t}</span>`).join('');
-      const title = n.url ? `<a href="${n.url}" target="_blank" rel="noopener">${n.title}</a>`
-                          : `<span>${n.title}</span>`;
-      const sum = n.summary ? `<p class="news-sum">${n.summary}</p>` : '';
-      return `
+  <script>
+    (function () {
+      const list = document.getElementById('newsList');
+      if (!list) return;
+
+      fetch('data/news.json')
+        .then(r => r.json())
+        .then(items => {
+          const sorted = items
+            .slice()
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .slice(0, 5);
+
+          list.innerHTML = sorted.map(renderItem).join('');
+        })
+        .catch(() => {
+          list.innerHTML = '<li class="news-item muted">Unable to load news right now.</li>';
+        });
+
+      function renderItem(n) {
+        const date = new Date(n.date);
+        const nice = date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        const tags = (n.tags || []).map(t => `<span class="tag mini">${t}</span>`).join('');
+        const title = n.url ? `<a href="${n.url}" target="_blank" rel="noopener">${n.title}</a>`
+          : `<span>${n.title}</span>`;
+        const sum = n.summary ? `<p class="news-sum">${n.summary}</p>` : '';
+        return `
         <li class="news-item">
           <div class="news-meta">
             <time datetime="${n.date}" class="news-date">${nice}</time>
@@ -430,36 +462,37 @@
           <h3 class="news-title">${title}</h3>
           ${sum}
         </li>`;
-    }
-  })();
-</script>
-
-
-<script>
-  (function(){
-    const root = document.documentElement;
-    const btns = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')].filter(Boolean);
-
-    // Load saved theme
-    const saved = localStorage.getItem('theme'); // 'light' or 'dark'
-    if (saved === 'light') root.setAttribute('data-theme','light');
-    else root.removeAttribute('data-theme'); // default dark
-
-    // Toggle handler
-    function toggleTheme(){
-      const isLight = root.getAttribute('data-theme') === 'light';
-      if (isLight){
-        root.removeAttribute('data-theme');     // back to dark
-        localStorage.setItem('theme','dark');
-      } else {
-        root.setAttribute('data-theme','light');
-        localStorage.setItem('theme','light');
       }
-    }
-    btns.forEach(b => b.addEventListener('click', toggleTheme));
-  })();
-</script>
+    })();
+  </script>
+
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const btns = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')].filter(Boolean);
+
+      // Load saved theme
+      const saved = localStorage.getItem('theme'); // 'light' or 'dark'
+      if (saved === 'light') root.setAttribute('data-theme', 'light');
+      else root.removeAttribute('data-theme'); // default dark
+
+      // Toggle handler
+      function toggleTheme() {
+        const isLight = root.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          root.removeAttribute('data-theme');     // back to dark
+          localStorage.setItem('theme', 'dark');
+        } else {
+          root.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+        }
+      }
+      btns.forEach(b => b.addEventListener('click', toggleTheme));
+    })();
+  </script>
 
 
 </body>
+
 </html>
