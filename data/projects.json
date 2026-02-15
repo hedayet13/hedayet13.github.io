@@ -1,0 +1,77 @@
+{
+  "projects": [
+    {
+      "id": "anti-splashing-surface",
+      "title": "Design, Fabrication & Performance Analysis of 3D Anti-Splashing Surface",
+      "image": "images/Lotus3.jpg",
+      "imageAlt": "3D Anti-Splashing Surface simulation and prototypes",
+      "descriptionHtml": "<strong>Aim:</strong> We're currently crafting a cutting-edge surface as a key component of our ongoing research endeavor. This innovative surface is meticulously designed to minimize liquid splashes. Leveraging advanced fluid physics simulations, particularly with the support of Ansys Fluent, we've fine-tuned multiple parameters to perfection. Our exploration has led us to utilize top-tier materials like SLA-resin and PDMS, ensuring the utmost effectiveness and durability of the structure.",
+      "tools": ["Ansys Fluent", "CFD", "SolidWorks 3D", "OriginPro"],
+      "links": [
+        { "label": "Proposal", "url": "/Documents/report/surface.pdf" },
+        { "label": "Presentation", "url": "/Documents/presentations/surface.pdf" },
+        { "label": "Journal", "url": "https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" }
+      ]
+    },
+    {
+      "id": "icu-monitoring",
+      "title": "Centralized Monitoring System for COVID-19 ICU",
+      "image": "images/project/icuMonitoring.jpg",
+      "imageAlt": "Centralized ICU monitoring dashboard",
+      "descriptionHtml": "Our automated service supports hospital staff by efficiently monitoring and tracking ICU patient data. This project explores transforming research ideas into real-world medical solutions while navigating implementation complexity and human behavior challenges.",
+      "tools": ["Flask", "ESP32-CAM", "Raspberry Pi", "OpenCV", "Tesseract OCR", "SolidWorks 3D", "SQLite3", "Flutter"],
+      "links": [
+        { "label": "Web", "url": "https://stellarbd.com/icu" },
+        { "label": "Thesis", "url": "/Documents/report/icuMonitoring.pdf" },
+        { "label": "Presentation", "url": "/Documents/presentations/icuMonitoring.pdf" },
+        { "label": "GitHub", "url": "https://github.com/hedayet13/ICU-Monitoring-Device" }
+      ]
+    },
+    {
+      "id": "diabetic-retinopathy",
+      "title": "Early Diagnosis Platform for Diabetic Retinopathy",
+      "image": "images/project/dr.jpg",
+      "imageAlt": "Diabetic retinopathy retinal image heatmap",
+      "descriptionHtml": "This project uses transfer learning techniques to classify hemorrhages and microaneurysms for early diagnosis of diabetic retinopathy severity levels.",
+      "tools": ["Python", "OpenCV", "Transfer Learning"],
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/hedayet13/opencv" }
+      ]
+    },
+    {
+      "id": "speakers-from-scratch",
+      "title": "Speakers from Scratch",
+      "image": "images/project/speaker.jpg",
+      "imageAlt": "DIY speakers PCB and enclosure",
+      "descriptionHtml": "I fabricated the PCB using household tools and designed the circuit in DipTrace. This project explores transistor behavior and FET optimization in speaker systems.",
+      "tools": ["Proteus", "PSpice", "SolidWorks 3D", "SolidWorks PCB"],
+      "links": [
+        { "label": "YouTube", "url": "https://www.youtube.com/watch?v=FpyeXpAJetU" },
+        { "label": "Blog", "url": "https://hedayet13.wordpress.com/" }
+      ]
+    },
+    {
+      "id": "dc-power-supply",
+      "title": "0–30V DC Power Supply",
+      "image": "images/project/powersupply.jpg",
+      "imageAlt": "0–30V DC bench power supply with LCD",
+      "descriptionHtml": "Introducing our 0–30V DC power supply featuring real-time LCD voltage display and advanced protection circuitry to safeguard against overvoltage conditions.",
+      "tools": ["Proteus", "PSpice", "SolidWorks 3D", "SolidWorks PCB"],
+      "links": [
+        { "label": "YouTube", "url": "https://www.youtube.com/watch?v=l9D94LPrgfw" },
+        { "label": "Presentation", "url": "Documents/presentations/DC POWER.pdf" }
+      ]
+    },
+    {
+      "id": "ghorvara-app",
+      "title": "Ghorvara Mobile Application",
+      "image": "images/project/ghorvara.jpg",
+      "imageAlt": "Ghorvara Flutter mobile application UI",
+      "descriptionHtml": "A cross-platform Flutter application for Android and iOS that helps residents track expenses and allows house owners to verify payment status efficiently.",
+      "tools": ["Flutter", "Firebase"],
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/hedayet13/ghorvara" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Hedayet Islam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+<header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <a href="index.html"><div class="brand-badge" aria-hidden="true">HI</div></a>
+        <span>Hedayetul&nbsp;Islam</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="about.html">About Me!</a>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="icon icon-sun">☼</span>
+          <span class="icon icon-moon">☾</span>
+        </button>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true">☰</span>
+        <span class="visually-hidden">Toggle menu</span>
+      </button>
+    </div>
+
+    <nav id="mobileMenu" class="drawer" aria-label="Mobile">
+      <a href="about.html">About Me!</a>
+      <button id="themeToggleMobile" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="icon icon-sun">☼</span>
+        <span class="icon icon-moon">☾</span>
+      </button>
+    </nav>
+  </header>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <h2>Projects</h2>
+    </div>
+
+    <!-- ✅ Projects will be injected here -->
+    <div class="list" id="projectsList"></div>
+
+  </div>
+</section>
+
+<script src="js/projects.js"></script>
+<script src="js/global.js"></script>
+<script>
+  const btn = document.getElementById("themeToggle");
+  const btnMobile = document.getElementById("themeToggleMobile");
+
+  function toggleTheme(){
+    document.body.classList.toggle("light");
+  }
+
+  btn?.addEventListener("click", toggleTheme);
+  btnMobile?.addEventListener("click", toggleTheme);
+</script>
+
+</body>
+</html>
