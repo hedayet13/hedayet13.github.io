@@ -803,6 +803,29 @@ body { padding-top: var(--nav-h); }
   text-underline-offset: 3px;
 }
 
+.edu-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edu-left{
+  flex: 1;
+}
+
+.edu-right{
+  flex: 0 0 auto;
+  margin-left: 30px;
+}
+
+.edu-logo{
+  width: 140px;      /* control logo size */
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
 /* Responsive stacking */
 @media (max-width: 900px){
   .pub-card{ grid-template-columns: 1fr; }
@@ -871,3 +894,19 @@ body { padding-top: var(--nav-h); }
 .theme-toggle .icon-moon{ display:inline; }
 :root[data-theme="light"] .theme-toggle .icon-moon{ display:none; }
 :root[data-theme="light"] .theme-toggle .icon-sun{ display:inline; }
+
+@media (max-width: 768px){
+  .edu-flex{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-right{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .edu-logo{
+    width: 100px;
+  }
+}
