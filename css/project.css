@@ -2,51 +2,6 @@
 /* ========= Projects Page ========= */
 /* ================================= */
 
-/* ---------- THEME VARIABLES ---------- */
-/* Default = DARK */
-:root{
-  --p-card-bg: linear-gradient(145deg, rgba(14,22,33,0.98), rgba(17,28,42,0.98));
-  --p-border: rgba(255,255,255,0.08);
-  --p-shadow: 0 16px 52px rgba(0,0,0,0.45);
-
-  --p-title: rgba(255,255,255,0.95);
-  --p-text: rgba(255,255,255,0.84);
-  --p-muted: rgba(255,255,255,0.62);
-
-  --p-tag-text: rgba(170,195,255,0.95);
-  --p-tag-border: rgba(42,109,244,0.55);
-  --p-tag-bg: rgba(42,109,244,0.10);
-
-  --p-hover-border: rgba(42,109,244,0.70);
-  --p-hover-shadow: 0 20px 65px rgba(0,0,0,0.55);
-
-  --p-media-bg: rgba(255,255,255,0.02);
-  --p-media-sep: rgba(255,255,255,0.06);
-}
-
-/* LIGHT MODE OVERRIDES
-   Change selector if your theme class name is different (example: body.light) */
-body.light{
-  --p-card-bg: #ffffff;
-  --p-border: rgba(15,23,42,0.10);
-  --p-shadow: 0 14px 40px rgba(2,6,23,0.10);
-
-  --p-title: #0f172a;
-  --p-text: #334155;
-  --p-muted: #64748b;
-
-  --p-tag-text: #075985;
-  --p-tag-border: rgba(14,165,233,0.55);
-  --p-tag-bg: rgba(14,165,233,0.12);
-
-  --p-hover-border: rgba(14,165,233,0.55);
-  --p-hover-shadow: 0 18px 55px rgba(2,6,23,0.14);
-
-  --p-media-bg: #f1f5f9;
-  --p-media-sep: rgba(15,23,42,0.08);
-}
-
-/* ---------- SECTION ---------- */
 #projects{
   padding: 70px 0 90px;
 }
@@ -60,7 +15,6 @@ body.light{
   font-size: 42px;
   font-weight: 750;
   letter-spacing: -0.02em;
-  color: var(--p-title);
 }
 
 /* Root container */
@@ -70,7 +24,7 @@ body.light{
   gap: 18px;
 }
 
-/* If your JS wraps rest in .p-grid, force single column */
+/* If your JS still wraps the rest in .p-grid, force it to be single column */
 #projectsList .p-grid{
   display: flex;
   flex-direction: column;
@@ -82,105 +36,91 @@ body.light{
 /* ================================= */
 
 .p-card{
+  /* Card look */
   border-radius: 22px;
-  border: 1px solid var(--p-border);
-  background: var(--p-card-bg);
-  box-shadow: var(--p-shadow);
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(145deg, rgba(14,22,33,0.98), rgba(17,28,42,0.98));
+  box-shadow: 0 16px 52px rgba(0,0,0,0.45);
   overflow: hidden;
-
-  /* IMPORTANT: prevent global CSS breaking grid */
-  position: relative;
-  min-width: 0;
 
   /* Row layout */
   display: grid;
-  grid-template-columns: clamp(300px, 38vw, 520px) 1fr; /* image | content */
+  grid-template-columns: 440px 1fr; /* image | content */
   align-items: stretch;
 
   /* SAME SIZE */
   min-height: 300px;
-
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Hover */
 .p-card:hover{
-  border-color: var(--p-hover-border);
-  box-shadow: var(--p-hover-shadow);
+  border-color: rgba(42,109,244,0.70);
+  box-shadow: 0 20px 65px rgba(0,0,0,0.55);
   transform: translateY(-3px);
+  transition: 0.2s ease;
 }
 
-/* ---------- Left image panel ---------- */
+/* Left image panel */
 .p-media{
   position: relative;
   overflow: hidden;
 
-  /* hard constraints so it NEVER overlaps content */
-  width: 100%;
-  min-width: 0;
+  /* make image fill full card height */
   height: 100%;
   min-height: 300px;
 
-  background: var(--p-media-bg);
-  border-right: 1px solid var(--p-media-sep);
-
+  /* Image corners match card */
   border-radius: 22px 0 0 22px;
 }
 
-/* Hard override for any global img rules */
 .p-media img{
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  display: block !important;
-
-  object-fit: cover !important;
-  object-position: center !important;
-  transform: none !important;
-  position: static !important;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* fills panel nicely */
 }
 
-/* Remove featured extras if exist */
+/* Remove featured glow/kicker if exists */
 .p-kicker{ display: none !important; }
 .p-mediaGlow{ display: none !important; }
 
-/* ---------- Right content panel ---------- */
+/* Right content panel */
 .p-content{
   padding: 22px 26px;
   min-width: 0;
 
   display: flex;
   flex-direction: column;
-
-  /* stop long words breaking layout */
-  overflow: hidden;
 }
 
+/* Title */
 .p-title{
   margin: 0 0 10px 0;
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: var(--p-title);
 }
 
+/* Description (keep nice + controlled height) */
 .p-desc{
-  color: var(--p-text);
+  color: rgba(255,255,255,0.84);
   line-height: 1.7;
 
-  /* keep all cards equal */
+  /* keep cards equal height */
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 5;          /* change 5 -> 6 if you want more text */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+/* Tools line */
 .p-tools{
   margin-top: 12px;
   font-size: 13px;
-  color: var(--p-muted);
+  color: rgba(255,255,255,0.62);
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2;          /* keep tools from exploding height */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -190,19 +130,20 @@ body.light{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: auto;
+  margin-top: auto;               /* pushes tags to bottom */
   padding-top: 14px;
 }
 
+/* Tag style */
 .p-tag{
   padding: 7px 12px;
   border-radius: 999px;
   font-size: 13px;
   text-decoration: none;
 
-  color: var(--p-tag-text);
-  border: 1px solid var(--p-tag-border);
-  background: var(--p-tag-bg);
+  color: rgba(170,195,255,0.95);
+  border: 1px solid rgba(42,109,244,0.55);
+  background: rgba(42,109,244,0.10);
 
   transition: 0.18s ease;
 }
@@ -213,20 +154,13 @@ body.light{
   color: #fff;
 }
 
-/* Light mode hover tag (optional nicer) */
-body.light .p-tag:hover{
-  background: rgba(14,165,233,0.85);
-  border-color: rgba(14,165,233,0.85);
-  color: #001018;
-}
-
 /* Empty state */
 .p-empty{
   padding: 18px;
   border-radius: 16px;
-  border: 1px solid var(--p-border);
-  background: color-mix(in srgb, var(--p-card-bg) 92%, #ffffff 8%);
-  color: var(--p-text);
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: rgba(255,255,255,0.75);
 }
 
 /* ================================= */
@@ -235,7 +169,7 @@ body.light .p-tag:hover{
 
 @media (max-width: 1100px){
   .p-card{
-    grid-template-columns: clamp(260px, 42vw, 420px) 1fr;
+    grid-template-columns: 380px 1fr;
   }
 }
 
@@ -252,16 +186,14 @@ body.light .p-tag:hover{
   .p-media{
     border-radius: 22px 22px 0 0;
     min-height: 260px;
-    border-right: 0;
-    border-bottom: 1px solid var(--p-media-sep);
   }
 
   .p-content{
-    padding: 16px 16px 18px;
+    padding: 16px 16px 18px 16px;
   }
 
   .p-desc{
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 8; /* more text on mobile */
   }
 }
 
@@ -274,3 +206,5 @@ body.light .p-tag:hover{
     min-height: 220px;
   }
 }
+
+

@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+  "id": "ai-iot-security",
+  "title": "AI-based IoT Security",
+  "image": "images/iotsecurity.jpg",
+  "imageAlt": "AI IoT Security illustration with lock and network icons",
+  "descriptionHtml": "Internet of Things (IoT) devices often lack built-in security systems, making them vulnerable to zero-day attacks. We propose a machine learning-based framework with large language model (LLM) integration to reduce false positives and bridge the semantic gap for operators.",
+  "tools": ["Scikit-learn", "GPT-4o mini", "MQTT", "Flask", "Python"],
+  "links": [
+    { "label": "Details", "url": "#" }
+  ]
+},
+
+    {
       "id": "anti-splashing-surface",
       "title": "Design, Fabrication & Performance Analysis of 3D Anti-Splashing Surface",
       "image": "images/Lotus3.jpg",

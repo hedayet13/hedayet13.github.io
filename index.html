@@ -32,7 +32,7 @@
       <!-- Desktop links -->
       <nav class="nav-links" aria-label="Primary">
         <a href="about.html">About Me!</a>
-        <a href="#projects">Projects</a>
+        <a href="project.html">Projects</a>
         <a href="#presentations">Presentations</a>
         <a href="#news">News!</a>
         <a href="#contact" class="btn">Contact</a>
@@ -91,7 +91,7 @@
     </p>
 
     <div class="cta-row">
-      <a class="btn" href="about.html#projects">View projects</a>
+      <a class="btn" href="project.html">View projects</a>
       <a class="btn yt" href="https://www.youtube.com/@hedayetulislam8211" target="_blank" rel="noopener">YouTube</a>
       <a class="btn" href="https://github.com/hedayet13" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="Documents/cv.pdf" target="_blank" rel="noopener">CV</a>
@@ -125,88 +125,20 @@
 
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Recent Projects</h2>
-          <!-- <div class="section-desc">Hand‑picked work across hardware, AI and bio‑inspired design.</div> -->
-        </div>
-        <a class="btn" href="project.html">Load more</a>
-      </div>
-
-      <div class="grid">
-        <!-- AI-based IoT Security -->
-        <article class="card span-6 span-4-lg">
-          <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/11175688" target="_blank" rel="noopener">
-            <img src="images/iotsecurity.jpg" alt="AI-based IoT Security project cover" />
-            <span class="pill">Recent</span>
-          </a>
-          <div class="card-body">
-            <h3>AI‑based IoT Security</h3>
-            <p>
-              Internet of Things (IoT) devices often lack built-in security systems, making them vulnerable to zero-day
-              attacks.
-              We propose a machine learning-based framework with large language model (LLM) integration to reduce false
-              positives
-              and bridge the semantic gap for operators.
-            </p>
-            <div class="tags">
-              <span class="tag">Scikit‑learn</span><span class="tag">GPT‑4o mini</span><span class="tag">MQTT</span>
-              <span class="tag">Flask</span><span class="tag">Python</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Bio‑Inspired Surface Engineering -->
-        <article class="card span-6 span-4-lg">
-          <a class="thumb"
-            href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext"
-            target="_blank" rel="noopener">
-            <img src="images/Lotus3.jpg" alt="Anti-splashing surface with lotus effect" />
-            <span class="pill">Featured</span>
-          </a>
-          <div class="card-body">
-            <h3>Bio‑Inspired Anti‑Splashing Surface</h3>
-            <p>
-              CFD‑driven design and rapid prototyping of textures to minimize splashing. Structures fabricated in SLA
-              resin and PDMS; parameters tuned in Ansys Fluent.
-            </p>
-            <div class="tags">
-              <span class="tag">CFD</span><span class="tag">Ansys‑Fluent</span><span class="tag">SolidWorks</span>
-              <span class="tag">PDMS</span><span class="tag">SLA</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ICU Monitoring -->
-        <article class="card span-6 span-4-lg">
-          <a class="thumb" href="https://stellarbd.com/icu" target="_blank" rel="noopener">
-            <img src="images/icuMonitoring.jpg" alt="ICU Monitoring Service dashboard" />
-            <span class="pill">Featured</span>
-          </a>
-          <div class="card-body">
-            <h3>ICU Monitoring Service</h3>
-            <p>
-              Automated hospital service to mirror bedside monitor data into remote, non‑COVID spaces.
-              Camera + OCR + edge processing with a full‑stack dashboard.
-            </p>
-            <div class="tags">
-              <span class="tag">Flask</span><span class="tag">ESP32‑CAM</span><span class="tag">Raspberry‑Pi</span>
-              <span class="tag">OpenCV</span><span class="tag">Tesseract‑OCR</span><span class="tag">Flutter</span>
-            </div>
-            <div class="cta-row">
-              <a class="btn" href="https://github.com/hedayet13/ICU-Monitoring-Device" target="_blank"
-                rel="noopener">Repo</a>
-              <a class="btn" href="/Documents/report/icuMonitoring.pdf" target="_blank" rel="noopener">Report</a>
-              <a class="btn" href="/Documents/presentations/icuMonitoring.pdf" target="_blank" rel="noopener">Slides</a>
-              <a class="btn" href="https://stellarbd.com/icu" target="_blank" rel="noopener">Live</a>
-            </div>
-          </div>
-        </article>
-      </div>
+  <section id="recent-projects" class="recent-projects">
+  <div class="container">
+    <div class="rp-head">
+      <h2>Recent Projects</h2>
+      <a class="rp-more" href="project.html">Load more</a>
     </div>
-  </section>
+
+    <div id="recentProjectsGrid" class="rp-grid"></div>
+  </div>
+</section>
+
+<!-- Recent projects renderer -->
+
+
 
   <!-- PRESENTATIONS -->
   <section id="presentations">
@@ -336,7 +268,7 @@
 
 
 <script src="js/global.js"></script>
-
+<script src="js/recent-projects.js"></script>
 
 </body>
 
