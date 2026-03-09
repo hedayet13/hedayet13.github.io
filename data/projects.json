@@ -8,7 +8,7 @@
   "descriptionHtml": "Internet of Things (IoT) devices often lack built-in security systems, making them vulnerable to zero-day attacks. We propose a machine learning-based framework with large language model (LLM) integration to reduce false positives and bridge the semantic gap for operators.",
   "tools": ["Scikit-learn", "GPT-4o mini", "MQTT", "Flask", "Python"],
   "links": [
-    { "label": "Details", "url": "#" }
+    { "label": "IEEE Access", "url": "https://ieeexplore.ieee.org/document/11175688" }
   ]
 },
 
