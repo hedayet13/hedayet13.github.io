@@ -910,3 +910,9 @@ body { padding-top: var(--nav-h); }
     width: 100px;
   }
 }
+.status-chip{
+  cursor: default;
+  background: rgba(0,179,164,.12);
+  border-color: rgba(0,179,164,.28);
+  color: #bdf0ec;
+}

@@ -1,0 +1,49 @@
+{
+  "publications": [
+    {
+      "category": "Conference",
+      "title": "Explainable AI-Driven Predictive Maintenance Curriculum for Smart Manufacturing",
+      "authors": "Md Hedayetul Islam Chy, et al.",
+      "venue": "ASEE 2026 Annual Conference",
+      "year": 2026,
+      "status": "Submitted",
+      "link": ""
+    },
+    {
+      "category": "Conference",
+      "title": "AM-ArtifactRAG: A Query-Driven LLM Framework for Structured Extraction from Additive Manufacturing Test-Artifact Literature",
+      "authors": "Md Hedayetul Islam Chy, et al.",
+      "venue": "ASME IMECE 2026",
+      "year": 2026,
+      "status": "Abstract Submitted",
+      "link": ""
+    },
+    {
+      "category": "Conference",
+      "title": "Few-Shot Transfer Learning for Acoustic Signal-Based Bearing Fault Diagnosis Under Known and Unknown Fault Conditions",
+      "authors": "Md Hedayetul Islam Chy, et al.",
+      "venue": "ASME IMECE 2026",
+      "year": 2026,
+      "status": "Abstract Submitted",
+      "link": ""
+    },
+    {
+      "category": "Journal",
+      "title": "LLM-Enhanced Security Framework for IoT Network: Anomaly Detection and Malicious Devices Identification",
+      "authors": "Mohammed Arif Iftakher Mahmood*, Fahim Ashab, Md Saifuzzaman Sohan, Md Hedayetul Islam Chy, Md Fazlul Kader*",
+      "venue": "IEEE Access",
+      "year": 2025,
+      "status": "Published",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11175688"
+    },
+    {
+      "category": "Journal",
+      "title": "Design optimization of anti-splashing targets and simulation of droplet impact on it",
+      "authors": "Md Hedayetul Islam Chy, Riya Biswas, Md Fazlul Kader, Yuan Wan*, Mohammed Arif Iftakher Mahmood*",
+      "venue": "Physics of Fluids (AIP)",
+      "year": 2024,
+      "status": "Published",
+      "link": "https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext"
+    }
+  ]
+}

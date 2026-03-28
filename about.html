@@ -183,60 +183,14 @@
 <!-- =========================
      PUBLICATIONS
 ========================= -->
+
 <section id="publication">
   <div class="container">
-    <div class="section-head"><h2>Publications</h2></div>
-
-    <div class="pub-list">
-
-      <!-- Pub 1 -->
-      <article class="pub-card">
-        <div class="pub-meta">
-          <span class="pub-badge">Journal</span>
-          <span class="pub-journal">IEEE Access</span>
-          <span class="pub-year">2025</span>
-        </div>
-
-        <div class="pub-body">
-          <h3 class="pub-title">
-            LLM-Enhanced Security Framework for IoT Network: Anomaly Detection and Malicious Devices Identification
-          </h3>
-
-          <p class="pub-authors muted">
-            Mohammed Arif Iftakher Mahmood*, Fahim Ashab, Md Saifuzzaman Sohan,
-            <span class="me">Md Hedayetul Islam Chy</span>, Md Fazlul Kader*
-          </p>
-
-          <div class="pub-actions">
-            <a class="btn-chip" href="https://ieeexplore.ieee.org/abstract/document/11175688" target="_blank" rel="noopener" title="Open paper">Paper ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Pub 2 -->
-      <article class="pub-card">
-        <div class="pub-meta">
-          <span class="pub-badge">Journal</span>
-          <span class="pub-journal">Physics of Fluids (AIP)</span>
-          <span class="pub-year">2024</span>
-        </div>
-
-        <div class="pub-body">
-          <h3 class="pub-title">
-            Design optimization of anti-splashing targets and simulation of droplet impact on it
-          </h3>
-
-          <p class="pub-authors muted">
-            <span class="me">Md Hedayetul Islam Chy</span>, Riya Biswas, Md Fazlul Kader, Yuan Wan*, Mohammed Arif Iftakher Mahmood*
-          </p>
-
-          <div class="pub-actions">
-            <a class="btn-chip" href="https://pubs.aip.org/aip/pof/article-abstract/36/1/013323/3052837/Design-optimization-of-anti-splashing-targets-and?redirectedFrom=fulltext" target="_blank" rel="noopener" title="Open paper">Paper ↗</a>
-          </div>
-        </div>
-      </article>
-
+    <div class="section-head">
+      <h2>Publications</h2>
     </div>
+
+    <div id="publication-list" class="pub-list"></div>
   </div>
 </section>
 
@@ -582,6 +536,6 @@ if (btn && drawer) {
     btns.forEach(b => b.addEventListener('click', toggleTheme));
   })();
 </script>
-
+<script src="js/publications.js"></script>
 </body>
 </html>
